@@ -1,29 +1,40 @@
 import React from 'react';
 
-export default function BrandsStrip() {
-  const items = [
-    'INVISALIGN DOCTOR PROVIDER',
-    'iTERO DIGITAL',
-    'SPRINTRAY 3D',
-    'TECNOLOGÍA DE PRECISIÓN',
-    'SAN SALVADOR',
-    'ZONA ROSA'
-  ];
+type StripItem =
+  | { type: 'logo'; name: string; logo: string }
+  | { type: 'text'; label: string };
 
+const items: StripItem[] = [
+  { type: 'logo', name: 'INVISALIGN', logo: '/invisa transparente.webp' },
+  { type: 'logo', name: 'iTERO', logo: '/itero logo.webp' },
+  { type: 'logo', name: 'SPRINTRAY', logo: '/sprintray logo.webp' },
+  { type: 'text', label: 'TECNOLOGÍA DE PRECISIÓN' },
+  { type: 'text', label: 'SAN SALVADOR' },
+  { type: 'text', label: 'ZONA ROSA' }
+];
+
+export default function BrandsStrip() {
   const duplicatedItems = [...items, ...items, ...items, ...items];
 
   return (
     <section className="w-full bg-dark h-[72px] overflow-hidden flex items-center relative">
-      <div className="flex w-max animate-[marquee_30s_linear_infinite]">
+      <div className="flex w-max animate-[marquee_30s_linear_infinite] items-center gap-12">
         {duplicatedItems.map((item, index) => (
           <div
             key={index}
-            className="flex items-center justify-center px-6"
+            className="flex items-center shrink-0"
           >
-            <span className="font-mono text-[11px] text-white tracking-[0.15em] whitespace-nowrap">
-              {item}
-            </span>
-            <span className="w-1 h-1 rounded-full bg-accent/50 ml-12"></span>
+            {item.type === 'logo' ? (
+              <img
+                src={item.logo}
+                alt={item.name}
+                className="h-5 w-auto max-w-[120px] object-contain brightness-0 invert opacity-90"
+              />
+            ) : (
+              <span className="font-mono text-[11px] text-white tracking-[0.15em] whitespace-nowrap">
+                {item.label}
+              </span>
+            )}
           </div>
         ))}
       </div>
