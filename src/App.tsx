@@ -9,7 +9,6 @@ gsap.registerPlugin(ScrollTrigger);
 // Lazy load components
 const Navbar = React.lazy(() => import('./components/Navbar'));
 const Footer = React.lazy(() => import('./components/Footer'));
-const FloatingWhatsApp = React.lazy(() => import('./components/FloatingWhatsApp'));
 
 // Lazy load pages
 const Home = React.lazy(() => import('./pages/Home'));
@@ -53,7 +52,6 @@ export default function App() {
             <Route path="/brackets" element={<Brackets />} />
           </Routes>
           <Footer />
-          <FloatingWhatsApp />
         </Suspense>
       </div>
     </Router>

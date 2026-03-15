@@ -48,7 +48,7 @@ export default function Footer() {
             © 2026 The Tooth Boutique. Todos los derechos reservados.
           </p>
           <p className="font-body font-light text-[12px] text-[#FAFAF8]/40">
-            Creada por TuWebSV
+            Creada por <a href="https://www.tuwebsv.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">TuWebSV</a>
           </p>
         </div>
       </div>

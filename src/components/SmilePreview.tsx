@@ -164,40 +164,38 @@ export default function SmilePreview() {
             </div>
 
             {/* Upload Area */}
-            {!isCameraOpen ? (
-              <div
-                className={`border-2 border-dashed rounded-[16px] p-12 flex flex-col items-center justify-center text-center cursor-pointer transition-colors ${
-                  isDragging ? 'border-accent bg-accent/5' : 'border-accent/30 hover:border-accent/60'
-                }`}
-                onDragOver={handleDragOver}
-                onDragLeave={handleDragLeave}
-                onDrop={handleDrop}
-                onClick={() => fileInputRef.current?.click()}
-              >
-                <input
-                  type="file"
-                  ref={fileInputRef}
-                  onChange={handleFileChange}
-                  accept="image/jpeg, image/png, image/webp"
-                  className="hidden"
-                />
-                <Upload size={32} className="text-accent mb-4" />
-                <p className="font-body font-light text-[15px] text-[#FAFAF8]/50 mb-2">
-                  Arrastra tu selfie aquí o haz clic para seleccionar
-                </p>
-                <p className="font-mono text-[10px] text-muted tracking-wider">
-                  JPG, PNG o WebP · máx. 8MB
-                </p>
+            <div
+              className={`${isCameraOpen ? 'hidden' : 'flex'} flex-col items-center justify-center text-center cursor-pointer transition-colors border-2 border-dashed rounded-[16px] p-12 ${
+                isDragging ? 'border-accent bg-accent/5' : 'border-accent/30 hover:border-accent/60'
+              }`}
+              onDragOver={handleDragOver}
+              onDragLeave={handleDragLeave}
+              onDrop={handleDrop}
+              onClick={() => fileInputRef.current?.click()}
+            >
+              <input
+                type="file"
+                ref={fileInputRef}
+                onChange={handleFileChange}
+                accept="image/jpeg, image/png, image/webp"
+                className="hidden"
+              />
+              <Upload size={32} className="text-accent mb-4" />
+              <p className="font-body font-light text-[15px] text-[#FAFAF8]/50 mb-2">
+                Arrastra tu selfie aquí o haz clic para seleccionar
+              </p>
+              <p className="font-mono text-[10px] text-muted tracking-wider">
+                JPG, PNG o WebP · máx. 8MB
+              </p>
+            </div>
+
+            <div className={`${!isCameraOpen ? 'hidden' : 'relative'} rounded-[16px] overflow-hidden bg-black aspect-[3/4] md:aspect-auto md:h-[300px]`}>
+              <video ref={videoRef} className="w-full h-full object-cover" autoPlay playsInline muted />
+              <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-4">
+                <button onClick={takePhoto} className="bg-accent text-dark font-body font-medium px-6 py-2 rounded-full">Capturar</button>
+                <button onClick={closeCamera} className="bg-white/20 text-white font-body font-medium px-6 py-2 rounded-full backdrop-blur-md">Cancelar</button>
               </div>
-            ) : (
-              <div className="relative rounded-[16px] overflow-hidden bg-black aspect-[3/4] md:aspect-auto md:h-[300px]">
-                <video ref={videoRef} className="w-full h-full object-cover" autoPlay playsInline muted />
-                <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-4">
-                  <button onClick={takePhoto} className="bg-accent text-dark font-body font-medium px-6 py-2 rounded-full">Capturar</button>
-                  <button onClick={closeCamera} className="bg-white/20 text-white font-body font-medium px-6 py-2 rounded-full backdrop-blur-md">Cancelar</button>
-                </div>
-              </div>
-            )}
+            </div>
 
             {!isCameraOpen && (
               <div className="flex justify-center">

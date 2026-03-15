@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
+import Hero from '../components/Hero';
 
-const Hero = React.lazy(() => import('../components/Hero'));
 const SmilePreview = React.lazy(() => import('../components/SmilePreview'));
 const Differentiators = React.lazy(() => import('../components/Differentiators'));
 const Services = React.lazy(() => import('../components/Services'));
@@ -13,13 +13,15 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <SmilePreview />
-      <Differentiators />
-      <Services />
-      <DraMelissa />
-      <VideoSection />
-      <Testimonials />
-      <Contact />
+      <Suspense fallback={<div className="h-[200px] w-full bg-bg flex items-center justify-center"></div>}>
+        <SmilePreview />
+        <Differentiators />
+        <Services />
+        <DraMelissa />
+        <VideoSection />
+        <Testimonials />
+        <Contact />
+      </Suspense>
     </main>
   );
 }

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import InvisalignHero from '../components/invisalign/InvisalignHero';
-import BrandsStrip from '../components/invisalign/BrandsStrip';
 import WhyInvisalign from '../components/invisalign/WhyInvisalign';
 import ProcessSection from '../components/invisalign/ProcessSection';
 import StatementStrip from '../components/invisalign/StatementStrip';
@@ -26,7 +25,6 @@ export default function Invisalign() {
 
       <main>
         <InvisalignHero />
-        <BrandsStrip />
         <WhyInvisalign />
         <ProcessSection />
         <StatementStrip />

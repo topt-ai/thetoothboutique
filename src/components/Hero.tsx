@@ -89,19 +89,9 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Brands Carousel - Mobile */}
-        <div className="hero-text-element w-[calc(100%+4rem)] mt-12 md:hidden -ml-8">
-          <BrandsCarousel />
-        </div>
-
         {/* Bottom Left Corner Text */}
         <div className="hero-text-element absolute bottom-[90px] left-8 md:left-[8%] font-mono text-[10px] text-muted uppercase tracking-wider hidden md:block">
           Century Tower · Zona Rosa · San Salvador
-        </div>
-
-        {/* Brands Carousel - Desktop */}
-        <div className="hero-text-element absolute bottom-0 left-0 w-full md:w-[55%] hidden md:block">
-          <BrandsCarousel />
         </div>
       </div>
 
@@ -120,6 +110,11 @@ export default function Hero() {
         </div>
         {/* Organic Blob */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-dark opacity-[0.06] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-3xl z-0 pointer-events-none mix-blend-multiply"></div>
+      </div>
+
+      {/* Brands Carousel - Full Width */}
+      <div className="absolute bottom-0 left-0 w-full z-30">
+        <BrandsCarousel />
       </div>
     </section>
   );

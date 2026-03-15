@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
+import BrandsCarousel from '../BrandsCarousel';
 
 export default function BracketsHero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -43,7 +44,7 @@ export default function BracketsHero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[80vh] bg-bg flex flex-col md:flex-row overflow-hidden"
+      className="relative min-h-[100dvh] bg-bg flex flex-col md:flex-row overflow-hidden"
     >
       {/* Left Copy */}
       <div
@@ -110,6 +111,11 @@ export default function BracketsHero() {
         </div>
         {/* Organic Blob */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-dark opacity-[0.06] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-3xl z-0 pointer-events-none mix-blend-multiply"></div>
+      </div>
+
+      {/* Brands Carousel - Full Width */}
+      <div className="absolute bottom-0 left-0 w-full z-30">
+        <BrandsCarousel />
       </div>
     </section>
   );

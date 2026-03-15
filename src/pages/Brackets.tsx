@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import BracketsHero from '../components/brackets/BracketsHero';
-import BrandsStrip from '../components/brackets/BrandsStrip';
 import TypesOfBrackets from '../components/brackets/TypesOfBrackets';
 import Advantages from '../components/brackets/Advantages';
 import ProcessSection from '../components/brackets/ProcessSection';
@@ -27,7 +26,6 @@ export default function Brackets() {
 
       <main>
         <BracketsHero />
-        <BrandsStrip />
         <TypesOfBrackets />
         <Advantages />
         <ProcessSection />

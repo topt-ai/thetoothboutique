@@ -1,40 +1,38 @@
 import React from 'react';
 
-export default function BrandsCarousel() {
-  const brands = [
-    { name: 'iTero', src: '/itero logo.webp' },
-    { name: 'Invisalign', src: '/invisalign logo.webp' },
-    { name: 'Carestream Dental', src: '/carestream-dental-logo_01.webp' },
-    { name: 'Ultradent', src: '/ultradent logo.webp' },
-    { name: '3M', src: '/3m logo.webp' },
-    { name: 'American Orthodontics', src: '/american ortho logo.webp' },
-    { name: 'SprintRay', src: '/sprintray logo.webp' },
-  ];
+const brands = [
+  "iTERO",
+  "INVISALIGN",
+  "CARESTREAM",
+  "ULTRADENT",
+  "3M",
+  "AMERICAN ORTHODONTICS",
+  "SPRINTRAY"
+];
 
-  // Duplicate for infinite scroll effect
-  const duplicatedBrands = [...brands, ...brands, ...brands];
+export default function BrandsCarousel() {
+  // Duplicate enough times to ensure a smooth, unbroken infinite scroll
+  const duplicatedBrands = [...brands, ...brands, ...brands, ...brands, ...brands];
 
   return (
-    <div className="w-full h-[72px] overflow-hidden flex items-center relative border-t border-muted/10">
-      <div className="flex w-max animate-[marquee_30s_linear_infinite]">
+    <div className="w-full h-10 md:h-14 bg-dark flex items-center overflow-hidden relative z-30">
+      <div className="flex w-max animate-[marquee_40s_linear_infinite] items-center h-full">
         {duplicatedBrands.map((brand, index) => (
           <div
-            key={index}
-            className="flex items-center justify-center px-8 md:px-12"
+            key={`${brand}-${index}`}
+            className="flex items-center h-full"
           >
-            <img 
-              src={brand.src} 
-              alt={brand.name} 
-              className="h-6 md:h-8 w-auto object-contain brightness-0 opacity-40 hover:opacity-80 transition-all duration-300"
-              referrerPolicy="no-referrer"
-            />
+            <span className="w-1 h-1 md:w-1.5 md:h-1.5 rounded-sm bg-accent/80 mx-4 md:mx-6"></span>
+            <span className="text-white/90 font-mono text-[10px] md:text-[12px] tracking-[0.15em] whitespace-nowrap leading-none mt-[2px]">
+              {brand}
+            </span>
           </div>
         ))}
       </div>
       <style>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-33.33%); }
+          100% { transform: translateX(-20%); } /* -20% because we have 5 sets of brands */
         }
       `}</style>
     </div>

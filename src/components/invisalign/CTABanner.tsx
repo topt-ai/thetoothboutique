@@ -10,7 +10,7 @@ export default function CTABanner() {
         </h2>
         
         <p className="font-body font-light text-[17px] text-white/80 max-w-[480px] leading-[1.6] mb-10 mx-auto">
-          Tu consulta inicial incluye radiografías, escaneo 3D, y consulta.
+          Tu consulta inicial incluye: Evaluación clínica, escaneo 3D y fotografías extraorales e intraorales
         </p>
 
         <a
