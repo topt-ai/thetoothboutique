@@ -1,0 +1,126 @@
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import BrandsCarousel from './BrandsCarousel';
+
+export default function Hero() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Staggered fade-up for text elements
+      gsap.fromTo(
+        '.hero-text-element',
+        { y: 40, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.9,
+          stagger: 0.12,
+          ease: 'power3.out',
+          delay: 0.2,
+        }
+      );
+
+      // Image slide-in
+      gsap.fromTo(
+        imageRef.current,
+        { x: 100, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1.2,
+          ease: 'power3.out',
+          delay: 0.4,
+        }
+      );
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <section
+      ref={containerRef}
+      id="inicio"
+      className="relative min-h-[100dvh] bg-bg flex flex-col md:flex-row overflow-hidden"
+    >
+      {/* Left Copy */}
+      <div
+        ref={textRef}
+        className="w-full md:w-[55%] flex flex-col justify-center px-8 md:pl-[8%] pt-32 md:pt-0 pb-16 md:pb-0 z-10"
+      >
+        <span className="hero-text-element font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6">
+          // Ortodoncia de precisión · San Salvador
+        </span>
+
+        <h1 className="hero-text-element font-display font-bold text-[clamp(52px,6vw,88px)] text-text leading-[1.05] mb-6">
+          Sonríe Antes<br />
+          <span className="italic font-normal">de lo que Imaginas</span>
+        </h1>
+
+        <p className="hero-text-element font-body font-light text-[18px] text-muted max-w-[480px] leading-[1.7] mb-8">
+          La Dra. Melissa Reneé y su equipo en Century Tower, Zona Rosa, combinan tecnología de primer nivel con tratamientos que terminan antes de lo que esperas.
+        </p>
+
+        <div className="hero-text-element flex flex-wrap items-center gap-3 font-mono text-[11px] text-muted mb-10">
+          <span>Invisalign Doctor</span>
+          <span className="w-1 h-1 rounded-full bg-muted/50"></span>
+          <span>iTero Digital</span>
+          <span className="w-1 h-1 rounded-full bg-muted/50"></span>
+          <span>SprintRay 3D</span>
+        </div>
+
+        <div className="hero-text-element flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-2">
+          <a
+            href="https://wa.me/50379056000"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-gold text-white font-body font-semibold text-[15px] px-9 py-4 rounded-full hover:bg-gold/90 transition-colors"
+          >
+            Agenda tu cita por WhatsApp
+          </a>
+          <a
+            href="#tratamientos"
+            className="font-body font-normal text-[14px] text-muted hover:text-dark underline decoration-muted/30 hover:decoration-dark underline-offset-4 transition-all"
+          >
+            Ver tratamientos
+          </a>
+        </div>
+
+        {/* Brands Carousel - Mobile */}
+        <div className="hero-text-element w-[calc(100%+4rem)] mt-12 md:hidden -ml-8">
+          <BrandsCarousel />
+        </div>
+
+        {/* Bottom Left Corner Text */}
+        <div className="hero-text-element absolute bottom-[90px] left-8 md:left-[8%] font-mono text-[10px] text-muted uppercase tracking-wider hidden md:block">
+          Century Tower · Zona Rosa · San Salvador
+        </div>
+
+        {/* Brands Carousel - Desktop */}
+        <div className="hero-text-element absolute bottom-0 left-0 w-full md:w-[55%] hidden md:block">
+          <BrandsCarousel />
+        </div>
+      </div>
+
+      {/* Right Image */}
+      <div className="w-full md:w-[45%] h-[50vh] md:h-[100dvh] relative">
+        <div
+          ref={imageRef}
+          className="w-full h-full md:rounded-bl-[40px] overflow-hidden relative z-10"
+        >
+          <img
+            src="/hero tooth.webp"
+            alt="Dra. Melissa Reneé"
+            className="w-full h-full object-cover object-center"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+        {/* Organic Blob */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-dark opacity-[0.06] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-3xl z-0 pointer-events-none mix-blend-multiply"></div>
+      </div>
+    </section>
+  );
+}

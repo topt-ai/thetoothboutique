@@ -1,0 +1,5 @@
+{
+  "name": "The Tooth Boutique",
+  "description": "Clínica de ortodoncia en San Salvador especializada en Invisalign y brackets.",
+  "requestFramePermissions": ["camera"]
+}
