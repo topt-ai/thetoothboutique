@@ -24,18 +24,20 @@ export default function InvisalignHero() {
         }
       );
 
-      // Image slide-in
-      gsap.fromTo(
-        imageRef.current,
-        { x: 100, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          duration: 1.2,
-          ease: 'power3.out',
-          delay: 0.4,
-        }
-      );
+      // Image slide-in (desktop only)
+      if (imageRef.current) {
+        gsap.fromTo(
+          imageRef.current,
+          { x: 100, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 1.2,
+            ease: 'power3.out',
+            delay: 0.4,
+          }
+        );
+      }
     }, containerRef);
 
     return () => ctx.revert();
@@ -46,33 +48,50 @@ export default function InvisalignHero() {
       ref={containerRef}
       className="relative min-h-[100dvh] bg-bg flex flex-col md:flex-row overflow-hidden"
     >
+      {/* Mobile Background Image + Overlay */}
+      <div
+        className="absolute inset-0 md:hidden z-0"
+        style={{
+          backgroundImage: 'url(/invisaaaaaa.webp)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+        }}
+      >
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(13,43,40,0.15) 0%, rgba(13,43,40,0.6) 60%, rgba(13,43,40,0.85) 100%)',
+          }}
+        />
+      </div>
+
       {/* Left Copy */}
       <div
         ref={textRef}
-        className="w-full md:w-[55%] flex flex-col justify-center px-8 md:pl-[8%] pt-32 md:pt-24 pb-16 md:pb-24 z-10"
+        className="w-full md:w-[55%] flex flex-col justify-end md:justify-center px-[6%] md:pl-[8%] pt-32 md:pt-24 pb-[100px] md:pb-24 z-10 min-h-[100dvh] md:min-h-0"
       >
-        <div className="hero-text-element font-mono text-[11px] text-muted mb-4">
-          <Link to="/" className="hover:text-dark transition-colors">Inicio</Link> / Invisalign
+        <div className="hero-text-element font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-4">
+          <Link to="/" className="hover:text-[#FAFAF8] md:hover:text-dark transition-colors">Inicio</Link> / Invisalign
         </div>
-        
+
         <span className="hero-text-element font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6">
           // Alineadores invisibles · Invisalign Doctor
         </span>
 
-        <h2 className="hero-text-element font-display font-bold text-[clamp(52px,6vw,88px)] text-text leading-[1.05] mb-6">
+        <h2 className="hero-text-element font-display font-bold text-[clamp(52px,6vw,88px)] text-[#FAFAF8] md:text-text leading-[1.05] mb-6">
           Transforma tu sonrisa<br />
           <span className="italic font-normal">sin que nadie lo note.</span>
         </h2>
 
-        <p className="hero-text-element font-body font-light text-[18px] text-muted max-w-[480px] leading-[1.7] mb-8">
+        <p className="hero-text-element font-body font-light text-[18px] text-[rgba(250,250,248,0.75)] md:text-muted max-w-[480px] leading-[1.7] mb-8">
           Invisalign es el sistema de alineadores más avanzado del mundo. Discreto, cómodo y con resultados que se ven antes de lo que esperas.
         </p>
 
-        <div className="hero-text-element flex flex-wrap items-center gap-3 font-mono text-[11px] text-muted mb-10">
+        <div className="hero-text-element flex flex-wrap items-center gap-3 font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-10">
           <span>Invisalign Doctor Provider</span>
-          <span className="w-1 h-1 rounded-full bg-muted/50"></span>
+          <span className="w-1 h-1 rounded-full bg-[rgba(250,250,248,0.3)] md:bg-muted/50"></span>
           <span>Tecnología iTero 3D</span>
-          <span className="w-1 h-1 rounded-full bg-muted/50"></span>
+          <span className="w-1 h-1 rounded-full bg-[rgba(250,250,248,0.3)] md:bg-muted/50"></span>
           <span>Sin alambres</span>
         </div>
 
@@ -87,15 +106,15 @@ export default function InvisalignHero() {
           </a>
           <a
             href="#proceso"
-            className="font-body font-normal text-[14px] text-muted hover:text-dark underline decoration-muted/30 hover:decoration-dark underline-offset-4 transition-all"
+            className="font-body font-normal text-[14px] text-[#FAFAF8] md:text-muted hover:text-dark underline decoration-[rgba(250,250,248,0.3)] md:decoration-muted/30 hover:decoration-dark underline-offset-4 transition-all"
           >
             Ver el proceso
           </a>
         </div>
       </div>
 
-      {/* Right Image */}
-      <div className="w-full md:w-[45%] h-[50vh] md:h-auto md:absolute md:inset-y-0 md:right-0 relative">
+      {/* Right Image - Desktop Only */}
+      <div className="hidden md:block w-full md:w-[45%] h-auto md:absolute md:inset-y-0 md:right-0 relative">
         <div
           ref={imageRef}
           className="w-full h-full md:rounded-bl-[40px] overflow-hidden relative z-10"

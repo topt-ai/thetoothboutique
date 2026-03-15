@@ -23,18 +23,20 @@ export default function Hero() {
         }
       );
 
-      // Image slide-in
-      gsap.fromTo(
-        imageRef.current,
-        { x: 100, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          duration: 1.2,
-          ease: 'power3.out',
-          delay: 0.4,
-        }
-      );
+      // Image slide-in (desktop only)
+      if (imageRef.current) {
+        gsap.fromTo(
+          imageRef.current,
+          { x: 100, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 1.2,
+            ease: 'power3.out',
+            delay: 0.4,
+          }
+        );
+      }
     }, containerRef);
 
     return () => ctx.revert();
@@ -46,29 +48,46 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-[100dvh] bg-bg flex flex-col md:flex-row overflow-hidden"
     >
+      {/* Mobile Background Image + Overlay */}
+      <div
+        className="absolute inset-0 md:hidden z-0"
+        style={{
+          backgroundImage: 'url(/hero tooth.webp)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'right 30% top 10%',
+        }}
+      >
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(13,43,40,0.15) 0%, rgba(13,43,40,0.6) 60%, rgba(13,43,40,0.85) 100%)',
+          }}
+        />
+      </div>
+
       {/* Left Copy */}
       <div
         ref={textRef}
-        className="w-full md:w-[55%] flex flex-col justify-center px-8 md:pl-[8%] pt-32 md:pt-0 pb-16 md:pb-0 z-10"
+        className="w-full md:w-[55%] flex flex-col justify-end md:justify-center px-[6%] md:pl-[8%] pt-32 md:pt-0 pb-[100px] md:pb-0 z-10 min-h-[100dvh] md:min-h-0"
       >
         <span className="hero-text-element font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6">
           // Ortodoncia de precisión · San Salvador
         </span>
 
-        <h1 className="hero-text-element font-display font-bold text-[clamp(52px,6vw,88px)] text-text leading-[1.05] mb-6">
+        <h1 className="hero-text-element font-display font-bold text-[clamp(52px,6vw,88px)] text-[#FAFAF8] md:text-text leading-[1.05] mb-6">
           Sonríe Antes<br />
           <span className="italic font-normal">de lo que Imaginas</span>
         </h1>
 
-        <p className="hero-text-element font-body font-light text-[18px] text-muted max-w-[480px] leading-[1.7] mb-8">
+        <p className="hero-text-element font-body font-light text-[18px] text-[rgba(250,250,248,0.75)] md:text-muted max-w-[480px] leading-[1.7] mb-8">
           La Dra. Melissa Reneé y su equipo en Century Tower, Zona Rosa, combinan tecnología de primer nivel con tratamientos que terminan antes de lo que esperas.
         </p>
 
-        <div className="hero-text-element flex flex-wrap items-center gap-3 font-mono text-[11px] text-muted mb-10">
+        <div className="hero-text-element flex flex-wrap items-center gap-3 font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-10">
           <span>Invisalign Doctor</span>
-          <span className="w-1 h-1 rounded-full bg-muted/50"></span>
+          <span className="w-1 h-1 rounded-full bg-[rgba(250,250,248,0.3)] md:bg-muted/50"></span>
           <span>iTero Digital</span>
-          <span className="w-1 h-1 rounded-full bg-muted/50"></span>
+          <span className="w-1 h-1 rounded-full bg-[rgba(250,250,248,0.3)] md:bg-muted/50"></span>
           <span>SprintRay 3D</span>
         </div>
 
@@ -83,7 +102,7 @@ export default function Hero() {
           </a>
           <a
             href="#tratamientos"
-            className="font-body font-normal text-[14px] text-muted hover:text-dark underline decoration-muted/30 hover:decoration-dark underline-offset-4 transition-all"
+            className="font-body font-normal text-[14px] text-[#FAFAF8] md:text-muted hover:text-dark underline decoration-[rgba(250,250,248,0.3)] md:decoration-muted/30 hover:decoration-dark underline-offset-4 transition-all"
           >
             Ver tratamientos
           </a>
@@ -95,8 +114,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Right Image */}
-      <div className="w-full md:w-[45%] h-[50vh] md:h-[100dvh] relative">
+      {/* Right Image - Desktop Only */}
+      <div className="hidden md:block w-full md:w-[45%] h-[100dvh] relative">
         <div
           ref={imageRef}
           className="w-full h-full md:rounded-bl-[40px] overflow-hidden relative z-10"
