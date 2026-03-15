@@ -1,13 +1,13 @@
 import React from 'react';
 
 const brands = [
-  { name: "iTERO", logo: "/itero logo.webp", larger: false },
-  { name: "INVISALIGN", logo: "/invisa transparente.webp", larger: false },
-  { name: "CARESTREAM", logo: "/carestream-dental-logo_01.webp", larger: false },
+  { name: "iTERO", logo: "/itero logo.webp", larger: true },
+  { name: "INVISALIGN", logo: "/invisa transparente.webp", larger: true },
+  { name: "CARESTREAM", logo: "/carestream-dental-logo_01.webp", larger: true },
   { name: "ULTRADENT", logo: "/ultradent logo.webp", larger: true },
-  { name: "3M", logo: "/3m test.webp", larger: false },
-  { name: "AMERICAN ORTHODONTICS", logo: "/american ortho logo.webp", larger: false },
-  { name: "SPRINTRAY", logo: "/sprintray logo.webp", larger: false }
+  { name: "3M", logo: "/3m test.webp", larger: true },
+  { name: "AMERICAN ORTHODONTICS", logo: "/american ortho logo.webp", larger: true },
+  { name: "SPRINTRAY", logo: "/sprintray logo.webp", larger: true }
 ];
 
 export default function BrandsCarousel() {
