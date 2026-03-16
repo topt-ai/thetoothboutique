@@ -14,7 +14,7 @@ export default function Navbar() {
       >
         <Link to="/" className="flex items-center justify-center">
           <img 
-            src="/tooth-boutique-logo.png" 
+            src="/tooth-logo-v2.webp" 
             alt="The Tooth Boutique" 
             className="h-10 md:h-12 w-auto object-contain brightness-0 invert"
           />

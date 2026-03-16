@@ -70,9 +70,6 @@ export default function Advantages() {
               key={index}
               className="advantage-card bg-white/5 rounded-[20px] p-10 border border-white/10"
             >
-              <div className="font-mono text-[11px] text-accent mb-6">
-                {adv.number}
-              </div>
               <h3 className="font-display font-semibold text-[24px] text-white mb-4">
                 {adv.title}
               </h3>

@@ -69,9 +69,6 @@ export default function WhyInvisalign() {
               key={index}
               className="why-card bg-white rounded-[20px] p-10 border border-[#0D2B28]/[0.06] shadow-[0_2px_24px_rgba(13,43,40,0.06)]"
             >
-              <div className="font-mono text-[11px] text-accent mb-6">
-                {card.number}
-              </div>
               <h3 className="font-display font-semibold text-[24px] text-text mb-4">
                 {card.title}
               </h3>

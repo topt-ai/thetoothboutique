@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Left */}
           <div>
             <img 
-              src="/tooth-boutique-logo.png" 
+              src="/tooth-logo-v2.webp" 
               alt="The Tooth Boutique" 
               className="h-16 md:h-20 w-auto object-contain mb-6 brightness-0 invert"
             />

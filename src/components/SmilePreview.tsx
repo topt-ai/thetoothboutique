@@ -125,10 +125,6 @@ export default function SmilePreview() {
     <section className="bg-dark py-[120px] px-8 md:px-[8%]">
       <div className="max-w-[1400px] mx-auto">
         <div className="text-center mb-16">
-          <span className="font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6 block">
-            // Tecnología IA
-          </span>
-
           <h2 className="font-display font-bold text-[clamp(36px,4vw,60px)] text-[#FAFAF8] leading-[1.1] mb-6">
             Sube tu selfie y mira cómo se podría ver<br />
             <span className="italic font-normal">tu sonrisa post-tratamiento</span>

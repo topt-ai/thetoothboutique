@@ -78,9 +78,6 @@ export default function Differentiators() {
               className="bg-surface rounded-[20px] shadow-[0_2px_24px_rgba(13,43,40,0.06)] border border-dark/5 p-10 flex flex-col justify-between h-full"
             >
               <div>
-                <span className="font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-4 block">
-                  {card.num}
-                </span>
                 <h3 className="font-display font-semibold text-[24px] text-text mb-4">
                   {card.title}
                 </h3>
