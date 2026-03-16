@@ -49,7 +49,7 @@ export default function Services() {
               key={service.id}
               className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 md:gap-[8%]`}
             >
-              <div className="w-full md:w-[45%] aspect-[4/5] md:aspect-square rounded-[24px] overflow-hidden shadow-[0_8px_32px_rgba(13,43,40,0.08)] border border-dark/5">
+              <div className="w-full md:w-[45%] aspect-[4/5] md:aspect-square rounded-[24px] overflow-hidden shadow-[0_8px_32px_rgba(15,76,92,0.08)] border border-dark/5">
                 <img
                   src={service.image}
                   alt={service.title}

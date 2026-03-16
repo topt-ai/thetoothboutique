@@ -60,7 +60,7 @@ export default function BracketsHero() {
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to bottom, rgba(13,43,40,0.15) 0%, rgba(13,43,40,0.6) 60%, rgba(13,43,40,0.85) 100%)',
+            background: 'linear-gradient(to bottom, rgba(15,76,92,0.15) 0%, rgba(15,76,92,0.6) 60%, rgba(15,76,92,0.85) 100%)',
           }}
         />
       </div>
@@ -74,7 +74,7 @@ export default function BracketsHero() {
           <Link to="/" className="hover:text-[#FAFAF8] md:hover:text-dark transition-colors">Inicio</Link> / Brackets
         </div>
 
-        <span className="hero-text-element font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6">
+        <span className="hero-text-element font-mono text-[11px] text-white/70 md:text-accent tracking-[0.12em] uppercase mb-6">
           // Ortodoncia · Metálicos · Cerámicos · Autoligados
         </span>
 
@@ -100,7 +100,7 @@ export default function BracketsHero() {
             href="https://wa.me/50379056000"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-gold text-white font-body font-semibold text-[15px] px-9 py-4 rounded-full hover:bg-gold/90 transition-colors"
+            className="btn-glass inline-flex items-center justify-center text-white font-body font-semibold text-[15px] px-9 py-4 rounded-full"
           >
             Agenda tu consulta
           </a>
@@ -126,7 +126,7 @@ export default function BracketsHero() {
             referrerPolicy="no-referrer"
           />
           {/* Deep teal overlay on image at 15% opacity */}
-          <div className="absolute inset-0 bg-[#0D2B28] opacity-15 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-[#0F4C5C] opacity-15 pointer-events-none"></div>
         </div>
         {/* Organic Blob */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-dark opacity-[0.06] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-3xl z-0 pointer-events-none mix-blend-multiply"></div>

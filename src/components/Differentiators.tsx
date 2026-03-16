@@ -75,7 +75,7 @@ export default function Differentiators() {
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className="bg-surface rounded-[20px] shadow-[0_2px_24px_rgba(13,43,40,0.06)] border border-dark/5 p-10 flex flex-col justify-between h-full"
+              className="bg-surface rounded-[20px] shadow-[0_2px_24px_rgba(15,76,92,0.06)] border border-dark/5 p-10 flex flex-col justify-between h-full"
             >
               <div>
                 <h3 className="font-display font-semibold text-[24px] text-text mb-4">

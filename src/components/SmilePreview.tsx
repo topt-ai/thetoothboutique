@@ -225,7 +225,7 @@ export default function SmilePreview() {
               <button
                 onClick={handleSubmit}
                 disabled={!file || !consent || isLoading}
-                className="w-full bg-gold text-white font-body font-semibold text-[15px] py-4 rounded-full hover:bg-gold/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="btn-glass w-full text-white font-body font-semibold text-[15px] py-4 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Ver mi sonrisa
               </button>

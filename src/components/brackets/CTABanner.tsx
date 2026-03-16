@@ -17,7 +17,7 @@ export default function CTABanner() {
           href="https://wa.me/50379056000"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center bg-white text-dark font-body font-semibold text-[15px] px-10 py-4 rounded-full hover:bg-white/90 transition-colors"
+          className="btn-glass-light inline-flex items-center justify-center text-white font-body font-semibold text-[15px] px-10 py-4 rounded-full"
         >
           Agenda tu consulta hoy
         </a>

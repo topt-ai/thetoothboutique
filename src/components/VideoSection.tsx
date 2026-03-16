@@ -12,7 +12,7 @@ export default function VideoSection() {
           Así Transformamos Sonrisas
         </h2>
 
-        <div className="max-w-[900px] mx-auto rounded-[20px] overflow-hidden shadow-[0_4px_32px_rgba(13,43,40,0.08)] border border-dark/5">
+        <div className="max-w-[900px] mx-auto rounded-[20px] overflow-hidden shadow-[0_4px_32px_rgba(15,76,92,0.08)] border border-dark/5">
           <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
             <iframe
               src="https://player.vimeo.com/video/1050078020?badge=0&autopause=0&player_id=0&app_id=58479"
