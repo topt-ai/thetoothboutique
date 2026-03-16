@@ -52,7 +52,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 md:hidden z-0"
         style={{
-          backgroundImage: 'url(/hero tooth.webp)',
+          backgroundImage: 'url(/hero%20tooth.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'right 30% top 10%',
         }}
@@ -60,7 +60,7 @@ export default function Hero() {
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to bottom, rgba(13,43,40,0.15) 0%, rgba(13,43,40,0.6) 60%, rgba(13,43,40,0.85) 100%)',
+            background: 'linear-gradient(to bottom, rgba(15,76,92,0.15) 0%, rgba(15,76,92,0.6) 60%, rgba(15,76,92,0.85) 100%)',
           }}
         />
       </div>
@@ -70,7 +70,7 @@ export default function Hero() {
         ref={textRef}
         className="w-full md:w-[55%] flex flex-col justify-end md:justify-center px-[6%] md:pl-[8%] pt-32 md:pt-0 pb-[100px] md:pb-0 z-10 min-h-[100dvh] md:min-h-0"
       >
-        <span className="hero-text-element font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6">
+        <span className="hero-text-element font-mono text-[11px] text-white/70 md:text-accent tracking-[0.12em] uppercase mb-6">
           // Ortodoncia de precisión · San Salvador
         </span>
 
@@ -87,8 +87,6 @@ export default function Hero() {
           <span>Invisalign Doctor</span>
           <span className="w-1 h-1 rounded-full bg-[rgba(250,250,248,0.3)] md:bg-muted/50"></span>
           <span>iTero Digital</span>
-          <span className="w-1 h-1 rounded-full bg-[rgba(250,250,248,0.3)] md:bg-muted/50"></span>
-          <span>SprintRay 3D</span>
         </div>
 
         <div className="hero-text-element flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-2">
@@ -96,7 +94,7 @@ export default function Hero() {
             href="https://wa.me/50379056000"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-gold text-white font-body font-semibold text-[15px] px-9 py-4 rounded-full hover:bg-gold/90 transition-colors"
+            className="btn-glass inline-flex items-center justify-center text-white font-body font-semibold text-[15px] px-9 py-4 rounded-full"
           >
             Agenda tu cita por WhatsApp
           </a>

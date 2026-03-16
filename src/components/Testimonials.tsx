@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card: React.FC<{ name: string; text: string; image?: string }> = ({ name, text, image }) => (
-  <div className="bg-white rounded-[16px] p-6 shadow-[0_2px_20px_rgba(13,43,40,0.06)] border border-dark/5 mb-6">
+  <div className="bg-white rounded-[16px] p-6 shadow-[0_2px_20px_rgba(15,76,92,0.06)] border border-dark/5 mb-6">
     <div className="flex items-center gap-4 mb-4">
       <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center font-display font-semibold text-[20px] text-accent overflow-hidden">
         {image ? (

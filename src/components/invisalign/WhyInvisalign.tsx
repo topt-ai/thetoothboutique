@@ -67,7 +67,7 @@ export default function WhyInvisalign() {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="why-card bg-white rounded-[20px] p-10 border border-[#0D2B28]/[0.06] shadow-[0_2px_24px_rgba(13,43,40,0.06)]"
+              className="why-card bg-white rounded-[20px] p-10 border border-[#0F4C5C]/[0.06] shadow-[0_2px_24px_rgba(15,76,92,0.06)]"
             >
               <h3 className="font-display font-semibold text-[24px] text-text mb-4">
                 {card.title}
