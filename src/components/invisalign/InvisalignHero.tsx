@@ -46,7 +46,7 @@ export default function InvisalignHero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-[100dvh] bg-bg flex flex-col md:flex-row overflow-hidden"
+      className="relative h-[100dvh] bg-bg flex flex-col md:flex-row overflow-hidden"
     >
       {/* Mobile Background Image + Overlay */}
       <div
@@ -68,26 +68,26 @@ export default function InvisalignHero() {
       {/* Left Copy */}
       <div
         ref={textRef}
-        className="w-full md:w-[55%] flex flex-col justify-end md:justify-center px-[6%] md:pl-[8%] pt-32 md:pt-24 pb-[100px] md:pb-24 z-10 min-h-[100dvh] md:min-h-0"
+        className="w-full md:w-[55%] flex flex-col justify-end md:justify-center px-[6%] md:pl-[8%] pt-24 md:pt-24 pb-[64px] md:pb-24 z-10 overflow-hidden"
       >
-        <div className="hero-text-element font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-4">
+        <div className="hero-text-element font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-2 md:mb-4">
           <Link to="/" className="hover:text-[#FAFAF8] md:hover:text-dark transition-colors">Inicio</Link> / Invisalign
         </div>
 
-        <span className="hero-text-element font-mono text-[11px] text-white/70 md:text-accent tracking-[0.12em] uppercase mb-6">
+        <span className="hero-text-element font-mono text-[11px] text-white/70 md:text-accent tracking-[0.12em] uppercase mb-3 md:mb-6">
           // Alineadores invisibles · Invisalign Doctor
         </span>
 
-        <h2 className="hero-text-element font-display font-bold text-[clamp(52px,6vw,88px)] text-[#FAFAF8] md:text-text leading-[1.05] mb-6">
+        <h2 className="hero-text-element font-display font-bold text-[clamp(40px,6vw,88px)] text-[#FAFAF8] md:text-text leading-[1.05] mb-4 md:mb-6">
           Transforma tu sonrisa<br />
           <span className="italic font-normal">sin que nadie lo note.</span>
         </h2>
 
-        <p className="hero-text-element font-body font-light text-[18px] text-[rgba(250,250,248,0.75)] md:text-muted max-w-[480px] leading-[1.7] mb-8">
+        <p className="hero-text-element font-body font-light text-[16px] md:text-[18px] text-[rgba(250,250,248,0.75)] md:text-muted max-w-[480px] leading-[1.6] md:leading-[1.7] mb-5 md:mb-8">
           Invisalign es el sistema de alineadores más avanzado del mundo. Discreto, cómodo y con resultados que se ven antes de lo que esperas.
         </p>
 
-        <div className="hero-text-element flex flex-wrap items-center gap-3 font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-10">
+        <div className="hero-text-element flex flex-wrap items-center gap-3 font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-6 md:mb-10">
           <span>Invisalign Doctor Provider</span>
           <span className="w-1 h-1 rounded-full bg-[rgba(250,250,248,0.3)] md:bg-muted/50"></span>
           <span>Tecnología iTero 3D</span>
