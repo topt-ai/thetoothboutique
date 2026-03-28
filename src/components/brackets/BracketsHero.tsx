@@ -124,6 +124,7 @@ export default function BracketsHero() {
             alt="Brackets"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
+            fetchPriority="high"
           />
           {/* Deep teal overlay on image at 15% opacity */}
           <div className="absolute inset-0 bg-[#0F4C5C] opacity-15 pointer-events-none"></div>

@@ -118,6 +118,7 @@ export default function BlanqueamientoHero() {
             alt="Blanqueamiento dental en The Tooth Boutique"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-[#0F4C5C] opacity-15 pointer-events-none"></div>
         </div>

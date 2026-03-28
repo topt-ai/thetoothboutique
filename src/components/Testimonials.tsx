@@ -5,7 +5,7 @@ const Card: React.FC<{ name: string; text: string; image?: string }> = ({ name, 
     <div className="flex items-center gap-4 mb-4">
       <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center font-display font-semibold text-[20px] text-accent overflow-hidden">
         {image ? (
-          <img src={image} alt={name} className="w-full h-full object-cover" />
+          <img src={image} alt={name} className="w-full h-full object-cover" loading="lazy" />
         ) : (
           name.charAt(0)
         )}

@@ -54,6 +54,7 @@ export default function DraMelissaMini() {
             alt="Dra. Melissa Reneé"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
+            loading="lazy"
           />
         </div>
 

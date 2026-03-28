@@ -123,6 +123,7 @@ export default function Hero() {
             alt="Dra. Melissa Reneé"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
+            fetchPriority="high"
           />
         </div>
         {/* Organic Blob */}
