@@ -14,6 +14,7 @@ const Footer = React.lazy(() => import('./components/Footer'));
 const Home = React.lazy(() => import('./pages/Home'));
 const Invisalign = React.lazy(() => import('./pages/Invisalign'));
 const Brackets = React.lazy(() => import('./pages/Brackets'));
+const Blanqueamiento = React.lazy(() => import('./pages/Blanqueamiento'));
 
 export default function App() {
   useEffect(() => {
@@ -50,6 +51,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/invisalign" element={<Invisalign />} />
             <Route path="/brackets" element={<Brackets />} />
+            <Route path="/blanqueamiento" element={<Blanqueamiento />} />
           </Routes>
           <Footer />
         </Suspense>

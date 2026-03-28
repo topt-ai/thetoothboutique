@@ -52,7 +52,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 md:hidden z-0"
         style={{
-          backgroundImage: 'url(/hero%20tooth.webp)',
+          backgroundImage: 'url(/main%20tooth.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'right 30% top 10%',
         }}
@@ -94,7 +94,7 @@ export default function Hero() {
             href="https://wa.me/50379056000"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-glass inline-flex items-center justify-center text-white font-body font-semibold text-[15px] px-9 py-4 rounded-full"
+            className="btn-glass inline-flex items-center justify-center font-body font-semibold text-[15px] px-9 py-4 rounded-full"
           >
             Agenda tu cita por WhatsApp
           </a>
@@ -119,7 +119,7 @@ export default function Hero() {
           className="w-full h-full md:rounded-bl-[40px] overflow-hidden relative z-10"
         >
           <img
-            src="/hero tooth.webp"
+            src="/main tooth.webp"
             alt="Dra. Melissa Reneé"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"

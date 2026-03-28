@@ -5,7 +5,7 @@ export default function Services() {
   const services = [
     {
       id: 'invisalign',
-      image: '/invisaaaaaa.webp',
+      image: '/invisa service card.webp',
       tag: 'Alineadores Invisibles',
       title: 'Invisalign',
       body: 'Alineadores invisibles con resultados rápidos y discretos. Sin alambres. Sin molestias. Ideal para adultos que quieren sonreír con confianza desde el primer mes.',
@@ -18,7 +18,7 @@ export default function Services() {
     },
     {
       id: 'brackets',
-      image: '/brackets servicio.webp',
+      image: '/brackets service card.webp',
       tag: 'Ortodoncia Tradicional',
       title: 'Brackets Metálicos y Cerámicos',
       body: 'Ortodoncia precisa y efectiva. Metálicos, cerámicos o autoligados. Opciones para cada caso y cada presupuesto, con los mismos tiempos de tratamiento reducidos.',
@@ -28,6 +28,19 @@ export default function Services() {
         'Tratamiento más corto',
       ],
       link: '/brackets',
+    },
+    {
+      id: 'blanqueamiento',
+      image: '/blanqueamiento.webp',
+      tag: 'Estética Dental',
+      title: 'Blanqueamiento Dental',
+      body: 'Una sola sesión de 10 minutos para una sonrisa hasta 7 tonos más blanca. Sin varias visitas, sin largas esperas. Resultados inmediatos ese mismo día.',
+      bullets: [
+        'Una sola sesión',
+        '10 minutos',
+        '5 a 7 tonos más blanco',
+      ],
+      link: '/blanqueamiento',
     },
   ];
 
@@ -40,7 +53,7 @@ export default function Services() {
 
         <h2 className="font-display font-bold text-[clamp(40px,4vw,64px)] text-text leading-[1.1] mb-16">
           Nuestros Servicios<br />
-          <span className="italic font-normal text-[24px] text-muted">de Ortodoncia</span>
+          <span className="italic font-normal text-[24px] text-muted">de Ortodoncia y Estética Dental</span>
         </h2>
 
         <div className="flex flex-col gap-24 md:gap-32 mt-16">

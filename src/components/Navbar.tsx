@@ -25,6 +25,7 @@ export default function Navbar() {
           <Link to="/" className="font-body font-normal text-[13px] text-white tracking-[0.08em] hover:text-accent transition-colors">Inicio</Link>
           <Link to="/invisalign" className="font-body font-normal text-[13px] text-white tracking-[0.08em] hover:text-accent transition-colors">Invisalign</Link>
           <Link to="/brackets" className="font-body font-normal text-[13px] text-white tracking-[0.08em] hover:text-accent transition-colors">Brackets</Link>
+          <Link to="/blanqueamiento" className="font-body font-normal text-[13px] text-white tracking-[0.08em] hover:text-accent transition-colors">Blanqueamiento</Link>
         </div>
 
         <a
@@ -51,6 +52,7 @@ export default function Navbar() {
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="font-body text-2xl text-white tracking-widest">Inicio</Link>
           <Link to="/invisalign" onClick={() => setIsMobileMenuOpen(false)} className="font-body text-2xl text-white tracking-widest">Invisalign</Link>
           <Link to="/brackets" onClick={() => setIsMobileMenuOpen(false)} className="font-body text-2xl text-white tracking-widest">Brackets</Link>
+          <Link to="/blanqueamiento" onClick={() => setIsMobileMenuOpen(false)} className="font-body text-2xl text-white tracking-widest">Blanqueamiento</Link>
           <a
             href="https://wa.me/50379056000"
             target="_blank"

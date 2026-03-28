@@ -25,7 +25,7 @@ export default function DraMelissaMini() {
       );
 
       gsap.fromTo(
-        '.dra-text-element',
+        '.blanq-dra-text',
         { y: 30, opacity: 0 },
         {
           y: 0,
@@ -59,41 +59,30 @@ export default function DraMelissaMini() {
 
         {/* Right Column - Copy */}
         <div ref={contentRef} className="w-full md:w-[60%] flex flex-col justify-center">
-          <span className="dra-text-element font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6">
+          <span className="blanq-dra-text font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6">
             // La especialista
           </span>
 
-          <h3 className="dra-text-element font-display font-bold text-[clamp(32px,3vw,52px)] text-text leading-[1.1] mb-2">
+          <h3 className="blanq-dra-text font-display font-bold text-[clamp(32px,3vw,52px)] text-text leading-[1.1] mb-2">
             Dra. Melissa Reneé
           </h3>
-          
-          <p className="dra-text-element font-display italic font-normal text-[20px] text-muted mb-8">
-            Máster en Ortodoncia
+
+          <p className="blanq-dra-text font-display italic font-normal text-[20px] text-muted mb-8">
+            Especialista en ortodoncia y estética dental
           </p>
 
-          <p className="dra-text-element font-body font-light text-[16px] text-muted leading-[1.8] max-w-[540px] mb-10">
-            La Dra. Reneé lleva años especializándose en reducir los tiempos de tratamiento sin comprometer resultados. Sus pacientes terminan antes y con resultados que superan lo que esperaban.
+          <p className="blanq-dra-text font-body font-light text-[16px] text-muted leading-[1.8] max-w-[540px] mb-10">
+            En The Tooth Boutique el blanqueamiento no es un servicio de relleno. Es parte de una visión completa de tu sonrisa. La Dra. Reneé evalúa cada caso antes de aplicar el tratamiento para garantizar el mejor resultado posible.
           </p>
 
-          <div className="dra-text-element flex flex-col gap-[14px] mb-12">
-            <div className="flex items-center gap-3 font-mono text-[11px] text-accent">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent/50"></span>
-              <span>Máster en Ortodoncia · Universidad Francisco Marroquín</span>
-            </div>
-            <div className="flex items-center gap-3 font-mono text-[11px] text-accent">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent/50"></span>
-              <span>Century Tower, Zona Rosa, San Salvador</span>
-            </div>
-          </div>
-
-          <div className="dra-text-element">
+          <div className="blanq-dra-text">
             <a
               href="https://wa.me/50379056000"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-glass inline-flex items-center justify-center font-body font-semibold text-[14px] px-8 py-3.5 rounded-full"
             >
-              Agenda tu consulta
+              Agenda tu cita
             </a>
           </div>
         </div>

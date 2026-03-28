@@ -70,6 +70,7 @@ html.lenis, html.lenis body {
 /* iOS Liquid Glass CTA Button */
 .btn-glass {
   position: relative;
+  color: #0F4C5C;
   background: linear-gradient(135deg, rgba(34,211,238,0.35) 0%, rgba(34,211,238,0.18) 50%, rgba(201,149,107,0.22) 100%);
   backdrop-filter: blur(20px) saturate(1.8);
   -webkit-backdrop-filter: blur(20px) saturate(1.8);

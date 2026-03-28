@@ -91,7 +91,7 @@ export default function DraMelissaMini() {
               href="https://wa.me/50379056000"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-glass inline-flex items-center justify-center text-white font-body font-semibold text-[14px] px-8 py-3.5 rounded-full"
+              className="btn-glass inline-flex items-center justify-center font-body font-semibold text-[14px] px-8 py-3.5 rounded-full"
             >
               Agenda tu consulta
             </a>

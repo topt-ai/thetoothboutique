@@ -52,7 +52,7 @@ export default function BracketsHero() {
       <div
         className="absolute inset-0 md:hidden z-0"
         style={{
-          backgroundImage: 'url(/brackets%20servicio.webp)',
+          backgroundImage: 'url(/brackets%20page.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
         }}
@@ -100,7 +100,7 @@ export default function BracketsHero() {
             href="https://wa.me/50379056000"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-glass inline-flex items-center justify-center text-white font-body font-semibold text-[15px] px-9 py-4 rounded-full"
+            className="btn-glass inline-flex items-center justify-center font-body font-semibold text-[15px] px-9 py-4 rounded-full"
           >
             Agenda tu consulta
           </a>
@@ -114,13 +114,13 @@ export default function BracketsHero() {
       </div>
 
       {/* Right Image - Desktop Only */}
-      <div className="hidden md:block w-full md:w-[45%] h-auto md:absolute md:inset-y-0 md:right-0 relative">
+      <div className="hidden md:block w-full md:w-[45%] h-[100dvh] relative">
         <div
           ref={imageRef}
           className="w-full h-full md:rounded-bl-[40px] overflow-hidden relative z-10"
         >
           <img
-            src="/brackets%20servicio.webp"
+            src="/brackets%20page.webp"
             alt="Brackets"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
