@@ -63,12 +63,12 @@ export default function BlanqueamientoHero() {
       </div>
 
       {/* Left Copy */}
-      <div className="w-full md:w-[55%] flex flex-col justify-end md:justify-center px-[6%] md:pl-[8%] pt-24 md:pt-24 pb-[64px] md:pb-24 z-10 overflow-hidden">
+      <div className="w-full md:w-[55%] flex flex-col justify-end md:justify-center px-[6%] md:pl-[8%] pt-32 md:pt-28 pb-[88px] md:pb-20 z-10 overflow-hidden">
         <div className="blanq-hero-text font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-2 md:mb-4">
           <Link to="/" className="hover:text-[#FAFAF8] md:hover:text-dark transition-colors">Inicio</Link> / Blanqueamiento Dental
         </div>
 
-        <span className="blanq-hero-text font-mono text-[11px] text-white/70 md:text-accent tracking-[0.12em] uppercase mb-3 md:mb-6">
+        <span className="blanq-hero-text font-mono text-[11px] text-white/70 md:text-accent tracking-[0.12em] uppercase mb-2 md:mb-6">
           // Blanqueamiento · Una sola sesión
         </span>
 
@@ -77,11 +77,11 @@ export default function BlanqueamientoHero() {
           <span className="italic font-normal">En 10 minutos.</span>
         </h2>
 
-        <p className="blanq-hero-text font-body font-light text-[16px] md:text-[18px] text-[rgba(250,250,248,0.75)] md:text-muted max-w-[480px] leading-[1.6] md:leading-[1.7] mb-5 md:mb-8">
+        <p className="blanq-hero-text font-body font-light text-[16px] md:text-[18px] text-[rgba(250,250,248,0.75)] md:text-muted max-w-[480px] leading-[1.6] md:leading-[1.7] mb-4 md:mb-8">
           Dale a tu sonrisa un nuevo comienzo. De 5 a 7 tonos más blanco después de una sola sesión.
         </p>
 
-        <div className="blanq-hero-text flex flex-wrap items-center gap-3 font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-6 md:mb-10">
+        <div className="blanq-hero-text flex flex-wrap items-center gap-3 font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-4 md:mb-10">
           <span>Una sola sesión</span>
           <span className="w-1 h-1 rounded-full bg-[rgba(250,250,248,0.3)] md:bg-muted/50"></span>
           <span>10 minutos</span>
