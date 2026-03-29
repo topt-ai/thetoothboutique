@@ -7,6 +7,7 @@ const Services = React.lazy(() => import('../components/Services'));
 const DraMelissa = React.lazy(() => import('../components/DraMelissa'));
 const VideoSection = React.lazy(() => import('../components/VideoSection'));
 const Testimonials = React.lazy(() => import('../components/Testimonials'));
+const FAQSection = React.lazy(() => import('../components/FAQSection'));
 const Contact = React.lazy(() => import('../components/Contact'));
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <DraMelissa />
         <VideoSection />
         <Testimonials />
+        <FAQSection />
         <Contact />
       </Suspense>
     </main>
