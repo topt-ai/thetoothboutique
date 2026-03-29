@@ -63,7 +63,7 @@ export default function BlanqueamientoHero() {
       </div>
 
       {/* Left Copy */}
-      <div className="w-full md:w-[55%] flex flex-col justify-end md:justify-center px-[6%] md:pl-[8%] pt-32 md:pt-28 pb-[88px] md:pb-20 z-10 overflow-hidden">
+      <div className="w-full md:w-[55%] flex flex-col justify-end md:justify-center px-[6%] md:pl-[8%] pt-32 md:pt-28 pb-[88px] md:pb-28 z-10 overflow-hidden">
         <div className="blanq-hero-text font-mono text-[11px] text-[rgba(250,250,248,0.75)] md:text-muted mb-2 md:mb-4">
           <Link to="/" className="hover:text-[#FAFAF8] md:hover:text-dark transition-colors">Inicio</Link> / Blanqueamiento Dental
         </div>
