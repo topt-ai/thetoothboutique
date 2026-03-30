@@ -9,6 +9,18 @@
   ],
   "rewrites": [
     {
+      "source": "/invisalign",
+      "destination": "/invisalign.html"
+    },
+    {
+      "source": "/brackets",
+      "destination": "/brackets.html"
+    },
+    {
+      "source": "/blanqueamiento",
+      "destination": "/blanqueamiento.html"
+    },
+    {
       "source": "/((?!assets/).*)",
       "destination": "/index.html"
     }

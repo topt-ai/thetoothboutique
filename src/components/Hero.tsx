@@ -54,7 +54,7 @@ export default function Hero() {
         style={{
           backgroundImage: 'url(/main%20tooth.webp)',
           backgroundSize: 'cover',
-          backgroundPosition: 'right 30% top 10%',
+          backgroundPosition: 'right 30% top 5%',
         }}
       >
         <div
