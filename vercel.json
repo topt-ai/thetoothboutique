@@ -2,11 +2,6 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "https://www.thetoothboutique.com/(.*)",
-      "destination": "https://thetoothboutique.com/$1",
-      "permanent": true
-    },
-    {
       "source": "/(.*)/",
       "destination": "/$1",
       "permanent": true
