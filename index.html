@@ -86,33 +86,17 @@
           "closes": "13:00"
         }
       ],
-      "availableService": [
-        {
-          "@type": "MedicalProcedure",
-          "name": "Invisalign",
-          "description": "Alineadores transparentes Invisalign para corregir la sonrisa sin brackets visibles."
-        },
-        {
-          "@type": "MedicalProcedure",
-          "name": "Brackets Metálicos",
-          "description": "Brackets metálicos tradicionales para ortodoncia efectiva y asequible."
-        },
-        {
-          "@type": "MedicalProcedure",
-          "name": "Brackets Cerámicos",
-          "description": "Brackets cerámicos estéticos que se mimetizan con el color natural del diente."
-        },
-        {
-          "@type": "MedicalProcedure",
-          "name": "Brackets Autoligados",
-          "description": "Brackets autoligados para tratamientos más rápidos y con menos citas de ajuste."
-        },
-        {
-          "@type": "MedicalProcedure",
-          "name": "Blanqueamiento Dental",
-          "description": "Blanqueamiento dental profesional con resultados de 5 a 7 tonos más blanco en una sola sesión."
-        }
-      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de The Tooth Boutique",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Invisalign", "description": "Alineadores transparentes Invisalign para corregir la sonrisa sin brackets visibles."}},
+          {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Brackets Metálicos", "description": "Brackets metálicos tradicionales para ortodoncia efectiva y asequible."}},
+          {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Brackets Cerámicos", "description": "Brackets cerámicos estéticos que se mimetizan con el color natural del diente."}},
+          {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Brackets Autoligados", "description": "Brackets autoligados para tratamientos más rápidos y con menos citas de ajuste."}},
+          {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Blanqueamiento Dental", "description": "Blanqueamiento dental profesional con resultados de 5 a 7 tonos más blanco en una sola sesión."}}
+        ]
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
