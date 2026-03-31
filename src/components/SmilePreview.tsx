@@ -68,6 +68,8 @@ export default function SmilePreview() {
       canvas.height = videoRef.current.videoHeight;
       const ctx = canvas.getContext('2d');
       if (ctx) {
+        ctx.translate(canvas.width, 0);
+        ctx.scale(-1, 1);
         ctx.drawImage(videoRef.current, 0, 0);
         canvas.toBlob((blob) => {
           if (blob) {
@@ -186,7 +188,7 @@ export default function SmilePreview() {
             </div>
 
             <div className={`${!isCameraOpen ? 'hidden' : 'relative'} rounded-[16px] overflow-hidden bg-black aspect-[3/4] md:aspect-auto md:h-[300px]`}>
-              <video ref={videoRef} className="w-full h-full object-cover" autoPlay playsInline muted />
+              <video ref={videoRef} className="w-full h-full object-cover -scale-x-100" autoPlay playsInline muted />
               <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-4">
                 <button onClick={takePhoto} className="bg-accent text-dark font-body font-medium px-6 py-2 rounded-full">Capturar</button>
                 <button onClick={closeCamera} className="bg-white/20 text-white font-body font-medium px-6 py-2 rounded-full backdrop-blur-md">Cancelar</button>
