@@ -108,16 +108,25 @@
     }
     </script>
 
-    <!-- Hide static content when JS loads -->
-    <style>.js .static-content{display:none}</style>
+    <!-- Visually hide static content but keep it accessible to crawlers -->
+    <style>
+.static-content {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>
   </head>
   <body>
-    <script>document.documentElement.classList.add('js')</script>
-
-    <!-- Static content for SEO crawlers (hidden when JS is active) -->
+    <!-- Static content for SEO crawlers (visually hidden) -->
     <main class="static-content">
-      <h1 class="sr-only">Invisalign San Salvador</h1>
-      <h2>Invisalign en El Salvador</h2>
+      <h1>Invisalign en El Salvador</h1>
       <p>Alineadores transparentes Invisalign en San Salvador con la Dra. Melissa Reneé, Invisalign Doctor Provider.</p>
       <h2>Alineadores transparentes San Salvador</h2>
       <p>Sin alambres ni brackets visibles. Resultados predecibles con escaneo iTero 3D.</p>
@@ -125,6 +134,32 @@
       <p>Invisible, removible, cómodo y con resultados rápidos. Ideal para adultos.</p>
       <h2>Proceso de tratamiento Invisalign</h2>
       <p>Consulta, escaneo 3D, fabricación de alineadores, inicio del tratamiento y seguimiento mensual.</p>
+
+      <h2>Qué hace diferente a Invisalign frente a los brackets tradicionales</h2>
+      <p>Invisalign cambió la ortodoncia moderna porque elimina los alambres y los brackets fijos. En lugar de eso, el tratamiento se basa en una serie de alineadores transparentes hechos a la medida que vas cambiando cada una a dos semanas. Cada férula mueve los dientes una fracción de milímetro siguiendo un plan digital diseñado desde el primer día.</p>
+      <p>La diferencia más obvia es estética: nadie nota que estás usando ortodoncia. Pero hay otras ventajas igual de importantes. Los alineadores son removibles, así que comés lo que quieras y te cepillás como siempre. No hay heridas en mejillas o labios por roces de alambres. Y como cada alineador está diseñado por computadora con base en tu escaneo 3D, los movimientos son más predecibles que con un arco metálico tradicional.</p>
+      <p>En consultas de control venís menos seguido, normalmente cada 6 a 8 semanas en lugar de cada 4 con brackets. Eso libera tiempo para vida real, trabajo y viajes sin tener que ajustar tu agenda al ritmo del consultorio.</p>
+
+      <h2>Cómo es el proceso paso a paso en The Tooth Boutique</h2>
+      <p>Tu tratamiento empieza con una consulta sin compromiso en nuestra clínica de Century Tower, Zona Rosa, San Salvador. La Dra. Melissa Reneé revisa tu sonrisa, conversa contigo sobre lo que querés cambiar y evalúa si Invisalign es la mejor opción para tu caso.</p>
+      <p>Si decidís avanzar, el siguiente paso es el escaneo digital con tecnología iTero. Este escaneo 3D reemplaza las moldes incómodas de yeso de antes: en pocos minutos tenemos un modelo digital exacto de tu boca. Con esa información diseñamos tu plan de tratamiento y te mostramos en pantalla, antes de empezar, cómo se moverán tus dientes mes a mes y cómo se verá tu sonrisa al final.</p>
+      <p>Una vez aprobás el plan, Align Technology fabrica tus alineadores en sus laboratorios y los recibimos en la clínica entre dos y cuatro semanas. En la cita de entrega te explicamos cómo usarlos, te damos el primer juego y resolvemos cada duda. A partir de ahí venís a controles cada 6 a 8 semanas para que la doctora confirme que los movimientos van según lo planeado.</p>
+
+      <h2>Qué casos puede tratar Invisalign y cuáles no</h2>
+      <p>Invisalign trata la mayoría de los casos que tradicionalmente se hacían con brackets: dientes apiñados, espacios entre dientes, mordida abierta, sobremordida, submordida y mordida cruzada. La tecnología ha evolucionado tanto en los últimos años que hoy puede manejar casos complejos que antes solo se trataban con ortodoncia fija.</p>
+      <p>Los casos que pueden requerir un enfoque combinado o brackets tradicionales son aquellos con problemas esqueléticos severos, dientes que necesitan rotaciones extremas o cuando se requieren extracciones múltiples con cierre completo de espacios. Aún en esos casos, muchas veces se puede iniciar con Invisalign y ajustar el plan según avanza el tratamiento.</p>
+      <p>La única forma de saber con certeza si sos candidato es con una evaluación clínica completa. En la consulta inicial revisamos tu mordida, hacemos el escaneo 3D y te damos una respuesta directa: sí, no, o un plan combinado.</p>
+
+      <h2>Por qué importa que tu ortodoncista sea Invisalign Doctor Provider</h2>
+      <p>El programa Invisalign Doctor Provider es una certificación que Align Technology otorga a los profesionales con experiencia comprobada y un volumen mínimo de casos completados al año. No cualquier ortodoncista en El Salvador califica: el nivel se gana con casos reales y formación continua en la tecnología.</p>
+      <p>Para vos como paciente eso se traduce en tres cosas. Primero, mayor experiencia interpretando escaneos y diseñando planes de tratamiento que funcionan desde la primera entrega. Segundo, acceso a herramientas avanzadas como Invisalign Comprehensive y técnicas que requieren entrenamiento específico. Y tercero, un manejo más fluido de imprevistos, porque la doctora ya vio antes lo que podría pasar.</p>
+      <p>La Dra. Melissa Reneé es Invisalign Doctor Provider y trata casos en The Tooth Boutique todos los días. Eso significa que el plan que diseña para tu boca se basa en cientos de casos previos, no en suposiciones.</p>
+
+      <h2>Resultados reales: qué esperar mes a mes</h2>
+      <p>El primer mes es el de adaptación. Aprendés a poner y quitar los alineadores, te acostumbrás a hablar con ellos puestos y al ritmo de cambiarlos cada una a dos semanas. La mayoría de pacientes empiezan a sentir los alineadores como parte de su día a día en una a dos semanas.</p>
+      <p>Entre los meses 3 y 6 ya hay cambios visibles. Dientes que estaban torcidos empiezan a alinearse, los espacios se cierran y la mordida cambia. Es el período más motivador del tratamiento porque ves los resultados de tu compromiso. Si tu plan incluye attachments —pequeños puntos de composite del color del diente que ayudan a mover dientes específicos— se colocan al inicio y se retiran al final.</p>
+      <p>Del mes 6 al 12 los movimientos se vuelven más sutiles pero el resultado total se va consolidando. Hacia el final del tratamiento se hacen los ajustes finos, y muchas veces se piden alineadores adicionales (refinamientos) para perfeccionar detalles. Cuando llega el último alineador empezás con retenedores, esenciales para mantener los resultados a largo plazo.</p>
+
       <h2>Preguntas frecuentes sobre Invisalign</h2>
       <h3>¿Cuánto tiempo dura el tratamiento con Invisalign?</h3>
       <p>El tratamiento promedio dura entre 12 y 18 meses, pero muchos pacientes ven resultados significativos en los primeros 3 a 6 meses. El tiempo exacto depende de la complejidad de tu caso.</p>
@@ -136,7 +171,20 @@
       <p>Invisalign puede tratar la mayoría de casos: dientes apiñados, espacios entre dientes, sobremordida, submordida y mordida cruzada. En tu consulta evaluaremos si eres candidato.</p>
       <h3>¿Cuánto cuesta el tratamiento con Invisalign?</h3>
       <p>El precio varía según la complejidad de tu caso. Agenda una consulta gratuita y te damos un presupuesto exacto sin compromiso.</p>
+      <h3>¿Necesito venir a controles muy seguido?</h3>
+      <p>No. Con Invisalign los controles son cada 6 a 8 semanas en promedio, mucho menos que con brackets tradicionales. La Dra. Melissa Reneé revisa que los dientes estén siguiendo el plan y te entrega los siguientes juegos de alineadores.</p>
+      <h3>¿Qué pasa si pierdo o daño un alineador?</h3>
+      <p>Lo primero es contactarnos. Dependiendo de en qué etapa del juego estés, te indicaremos si podés volver al alineador anterior temporalmente o avanzar al siguiente mientras llega el reemplazo. Por eso es importante guardar siempre el alineador previo y los siguientes en sus cajas correspondientes.</p>
+      <h3>¿Puedo comer y tomar bebidas con los alineadores puestos?</h3>
+      <p>Solo agua. Los alineadores deben retirarse para comer y para tomar cualquier otra bebida (café, té, refrescos, jugos). Tomar líquidos calientes con los alineadores puestos puede deformarlos, y los líquidos con color o azúcar pueden mancharlos o causar caries. Después de comer, te cepillás y volvés a colocar los alineadores.</p>
       <address>The Tooth Boutique · Century Tower, Zona Rosa, San Salvador · +503 7905 6000</address>
+      <section>
+        <h2>Otros tratamientos en The Tooth Boutique</h2>
+        <ul>
+          <li><a href="/brackets">Brackets en El Salvador – Metálicos, Cerámicos y Autoligados</a></li>
+          <li><a href="/blanqueamiento">Blanqueamiento Dental San Salvador</a></li>
+        </ul>
+      </section>
     </main>
 
     <div id="root"></div>

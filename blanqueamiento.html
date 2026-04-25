@@ -108,16 +108,25 @@
     }
     </script>
 
-    <!-- Hide static content when JS loads -->
-    <style>.js .static-content{display:none}</style>
+    <!-- Visually hide static content but keep it accessible to crawlers -->
+    <style>
+.static-content {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>
   </head>
   <body>
-    <script>document.documentElement.classList.add('js')</script>
-
-    <!-- Static content for SEO crawlers (hidden when JS is active) -->
+    <!-- Static content for SEO crawlers (visually hidden) -->
     <main class="static-content">
-      <h1 class="sr-only">Blanqueamiento Dental San Salvador</h1>
-      <h2>Blanqueamiento dental en El Salvador</h2>
+      <h1>Blanqueamiento dental en El Salvador</h1>
       <p>Blanqueamiento dental profesional en San Salvador en una sola sesión de 10 minutos.</p>
       <h2>De 5 a 7 tonos más blanco en una sesión</h2>
       <p>Resultados inmediatos y visibles. Sin varias sesiones, sin esperas.</p>
@@ -125,6 +134,32 @@
       <p>Llegás, aplicamos el tratamiento en 10 minutos y ves el resultado ese mismo día.</p>
       <h2>Por qué es diferente</h2>
       <p>Los blanqueamientos tradicionales toman 45 minutos o más. Este toma 10 minutos con mejores resultados.</p>
+
+      <h2>Cómo funciona el blanqueamiento dental en detalle</h2>
+      <p>El blanqueamiento profesional usa peróxido de hidrógeno o peróxido de carbamida en concentraciones altas que solo un odontólogo puede manejar de forma segura. El gel se aplica directamente sobre el esmalte, penetra los túbulos dentinarios y descompone las moléculas pigmentadas que causan el color amarillento u oscuro de los dientes. El resultado es un blanco más claro, sin alterar la estructura del diente.</p>
+      <p>En The Tooth Boutique, en Century Tower, Zona Rosa, San Salvador, usamos un sistema de blanqueamiento que combina el gel con luz LED activadora. La luz acelera la reacción química del peróxido y permite obtener resultados de 5 a 7 tonos más blanco en una sola sesión de 10 minutos. Sistemas tradicionales requieren entre 45 y 60 minutos por sesión y a menudo varias citas para llegar al mismo nivel.</p>
+      <p>Antes del tratamiento protegemos las encías y los labios para que el gel solo actúe sobre el esmalte. Vos te recostás cómodamente, escuchás música o ves tu celular mientras la luz hace el trabajo. No hay dolor, no hay sensación rara: es uno de los procedimientos más sencillos que ofrecemos.</p>
+
+      <h2>Diferencia entre blanqueamiento profesional y kits caseros</h2>
+      <p>Los kits caseros que se venden en farmacias o por internet usan concentraciones bajas de peróxido (entre 3 % y 6 %) porque están pensados para ser manejados sin supervisión. Por seguridad, el cambio que producen es lento y limitado: meses de uso para uno o dos tonos, en el mejor de los casos.</p>
+      <p>El blanqueamiento profesional usa concentraciones de 25 % a 40 %, aplicadas en un ambiente controlado donde el odontólogo protege los tejidos blandos antes de empezar. Eso lo hace seguro a corto plazo y mucho más efectivo: lo que un kit casero logra en meses, una sesión profesional lo logra en minutos. Y como el procedimiento se hace una vez, no hay riesgo de uso prolongado, sensibilidad acumulada o lesiones por mal sellado de las férulas.</p>
+      <p>Otra diferencia importante: el blanqueamiento profesional incluye una evaluación previa con la Dra. Melissa Reneé. Si tenés caries, restauraciones, sensibilidad extrema o manchas que no responden al peróxido, te avisamos antes de gastar tiempo y dinero. Los kits caseros no tienen ese filtro.</p>
+
+      <h2>Antes y después: qué esperar el mismo día y los días siguientes</h2>
+      <p>El cambio se ve apenas terminamos. Te entregamos un espejo y vas a notar la diferencia inmediatamente. Los pacientes suelen reaccionar con una sonrisa grande: el resultado es real y visible, no algo que tenés que imaginarte después.</p>
+      <p>Las primeras 24 a 48 horas son las más sensibles porque los túbulos del diente están abiertos y absorben pigmentos con más facilidad. Por eso recomendamos seguir una "dieta blanca" durante 48 horas: evitá café, té negro, vino tinto, refrescos oscuros, salsas con tomate, mostaza, curry y, sobre todo, tabaco. Comé arroz blanco, pollo, pescado, lácteos, manzana, banano, agua o leche.</p>
+      <p>Después de 48 horas podés volver a tu dieta normal con una recomendación general: cuanto menos pigmento ingerís, más tiempo se mantiene el resultado. Algunos pacientes sienten leve sensibilidad al frío durante uno o dos días; es normal y desaparece sola. Si la sensibilidad molesta, una pasta dental para dientes sensibles ayuda mucho.</p>
+
+      <h2>Quién es buen candidato para el blanqueamiento y quién no</h2>
+      <p>El candidato ideal tiene dientes naturales sanos, sin caries activas, con encías en buen estado y manchas causadas por alimentos, bebidas, tabaco o el envejecimiento normal del esmalte. En esos casos el resultado es excelente y predecible.</p>
+      <p>No se recomienda hacer blanqueamiento si hay caries sin tratar, restauraciones grandes en dientes frontales (porque las resinas y porcelanas no blanquean), embarazo o lactancia, o sensibilidad dental severa sin tratar. Tampoco se recomienda en pacientes muy jóvenes cuyos dientes aún están en formación.</p>
+      <p>Las manchas por fluorosis, tetraciclinas o trauma responden parcialmente al peróxido. En esos casos el blanqueamiento puede mejorar el tono general pero no eliminar las manchas por completo, y a veces conviene complementar con carillas u otros procedimientos estéticos. Eso lo evaluamos en la consulta inicial antes de cualquier compromiso.</p>
+
+      <h2>Cómo mantener los resultados por más tiempo</h2>
+      <p>El blanqueamiento dura entre 1 y 2 años en promedio, pero el rango real depende mucho de tus hábitos. Los principales enemigos del blanco son el café diario, el vino tinto, el tabaco, las salsas oscuras, los refrescos de cola y, en general, cualquier líquido que mancha una taza blanca.</p>
+      <p>No tenés que eliminar el café para siempre, pero sí podés hacer pequeños ajustes que ayudan: tomar bebidas pigmentadas con pajilla, enjuagarte con agua después de tomarlas, cepillarte 30 minutos después de comer y mantener tu profilaxis dental cada 6 meses. Esos cuatro hábitos extienden el resultado considerablemente.</p>
+      <p>Si querés mantener el blanco al máximo, podés hacer una sesión de mantenimiento corta cada 12 a 18 meses. Es más rápida y económica que la sesión inicial porque parte de un nivel mucho más alto. La Dra. Melissa Reneé te indica el momento exacto basándose en cómo evoluciona tu sonrisa.</p>
+
       <h2>Preguntas frecuentes sobre blanqueamiento dental</h2>
       <h3>¿Duele el tratamiento?</h3>
       <p>No. El procedimiento es completamente indoloro. Algunos pacientes pueden sentir una leve sensibilidad temporal después, pero desaparece rápido.</p>
@@ -136,7 +171,20 @@
       <p>El blanqueamiento es efectivo para manchas causadas por alimentos, bebidas y envejecimiento natural. Para manchas por trauma, fluorosis o medicamentos, la efectividad varía. En tu consulta evaluamos tu caso específico.</p>
       <h3>¿Cuánto cuesta el blanqueamiento dental?</h3>
       <p>Escríbenos por WhatsApp y te damos el precio exacto. El costo varía según el caso.</p>
+      <h3>¿Cuántos tonos puedo blanquear realmente?</h3>
+      <p>En promedio entre 5 y 7 tonos en una sola sesión. El resultado exacto depende del tono inicial, del tipo de manchas y de la respuesta individual del esmalte. En la consulta usamos una guía de tonos para mostrarte el punto de partida y la meta esperada.</p>
+      <h3>¿El blanqueamiento daña el esmalte?</h3>
+      <p>No, cuando se hace de forma profesional. El peróxido actúa sobre los pigmentos, no sobre la estructura del diente. Los estudios clínicos confirman que blanqueamientos supervisados por un odontólogo no debilitan el esmalte. Lo que sí daña es el uso excesivo de productos abrasivos o blanqueamientos caseros mal aplicados.</p>
+      <h3>¿Puedo hacerme el blanqueamiento si tengo coronas o carillas?</h3>
+      <p>El gel solo blanquea esmalte natural. Las coronas, carillas y resinas mantienen su color original. Si tenés trabajos en dientes frontales y querés blanquear, lo hablamos antes para definir si conviene blanquear primero los dientes naturales y después renovar las restauraciones para que combinen, o si la mejor opción es trabajar solo con los dientes que sí responden.</p>
       <address>The Tooth Boutique · Century Tower, Zona Rosa, San Salvador · +503 7905 6000</address>
+      <section>
+        <h2>Otros tratamientos en The Tooth Boutique</h2>
+        <ul>
+          <li><a href="/invisalign">Invisalign en El Salvador – Alineadores Transparentes</a></li>
+          <li><a href="/brackets">Brackets en El Salvador – Metálicos, Cerámicos y Autoligados</a></li>
+        </ul>
+      </section>
     </main>
 
     <div id="root"></div>
