@@ -7,7 +7,8 @@ const brands = [
   { name: "ULTRADENT", logo: "/ultradent logo.webp", larger: true },
   { name: "3M", logo: "/3m test.webp", larger: true },
   { name: "AMERICAN ORTHODONTICS", logo: "/american ortho logo.webp", larger: true },
-  { name: "SPRINTRAY", logo: "/sprintray logo.webp", larger: true }
+  { name: "SPRINTRAY", logo: "/sprintray logo.webp", larger: true },
+  { name: "DOLPHIN", logo: "/dolphin.png", larger: true }
 ];
 
 export default function BrandsCarousel() {

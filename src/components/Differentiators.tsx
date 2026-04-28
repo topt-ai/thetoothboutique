@@ -44,7 +44,7 @@ export default function Differentiators() {
     {
       num: '03',
       title: 'Tecnología de primer nivel',
-      body: 'Invisalign, iTero, SprintRay, láser. Equipos que la mayoría de clínicas en el país no tienen.',
+      body: 'Invisalign, iTero, SprintRay, láser Ultradent. Equipos que la mayoría de clínicas en el país no tienen.',
     },
     {
       num: '04',
