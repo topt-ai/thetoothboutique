@@ -53,8 +53,8 @@ export default function Hero() {
         className="absolute inset-0 md:hidden z-0"
         style={{
           backgroundImage: 'url(/main%20tooth.webp)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'right 30% top 5%',
+          backgroundSize: 'auto 130%',
+          backgroundPosition: 'right 30% top 75%',
         }}
       >
         <div
