@@ -60,6 +60,7 @@
       "telephone": "+50379056000",
       "email": "hola@thetoothboutique.com",
       "priceRange": "$$",
+      "medicalSpecialty": "Orthodontic",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Century Tower, Zona Rosa",
@@ -73,6 +74,15 @@
         "latitude": "13.6912581",
         "longitude": "-89.2373773"
       },
+      "areaServed": [
+        {"@type": "City", "name": "San Salvador"},
+        {"@type": "Place", "name": "Antiguo Cuscatlán"},
+        {"@type": "Place", "name": "Santa Tecla"},
+        {"@type": "Place", "name": "San Benito"},
+        {"@type": "Place", "name": "Escalón"},
+        {"@type": "Place", "name": "Santa Elena"},
+        {"@type": "Place", "name": "Maquilishuat"}
+      ],
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -97,6 +107,12 @@
           {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Brackets Autoligados", "description": "Brackets autoligados para tratamientos más rápidos y con menos citas de ajuste."}},
           {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Blanqueamiento Dental", "description": "Blanqueamiento dental profesional con resultados de 5 a 7 tonos más blanco en una sola sesión."}}
         ]
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Dra. Melissa Reneé",
+        "jobTitle": "Orthodontist",
+        "worksFor": {"@id": "https://thetoothboutique.com/#clinic"}
       },
       "aggregateRating": {
         "@type": "AggregateRating",
