@@ -85,9 +85,6 @@ export default function Brackets() {
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>
 
-      {/* Visually hidden H1 for SEO */}
-      <h1 className="sr-only">Brackets</h1>
-
       <main>
         <BracketsHero />
         <TypesOfBrackets />

@@ -90,8 +90,6 @@ export default function Blanqueamiento() {
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
       </Helmet>
 
-      <h1 className="sr-only">Blanqueamiento Dental San Salvador</h1>
-
       <main>
         <BlanqueamientoHero />
         <NumbersSection />

@@ -74,6 +74,10 @@ export default function BracketsHero() {
           <Link to="/" className="hover:text-[#FAFAF8] md:hover:text-dark transition-colors">Inicio</Link> / Brackets
         </div>
 
+        <h1 className="hero-text-element font-mono text-[11px] text-[#FAFAF8] md:text-text tracking-[0.12em] uppercase mb-2 md:mb-3">
+          Brackets en San Salvador
+        </h1>
+
         <span className="hero-text-element font-mono text-[11px] text-white/70 md:text-accent tracking-[0.12em] uppercase mb-2 md:mb-4">
           // Ortodoncia · Metálicos · Cerámicos · Autoligados
         </span>

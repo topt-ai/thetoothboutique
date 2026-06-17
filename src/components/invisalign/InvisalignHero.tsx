@@ -74,6 +74,10 @@ export default function InvisalignHero() {
           <Link to="/" className="hover:text-[#FAFAF8] md:hover:text-dark transition-colors">Inicio</Link> / Invisalign
         </div>
 
+        <h1 className="hero-text-element font-mono text-[11px] text-[#FAFAF8] md:text-text tracking-[0.12em] uppercase mb-2 md:mb-3">
+          Invisalign en San Salvador
+        </h1>
+
         <span className="hero-text-element font-mono text-[11px] text-white/70 md:text-accent tracking-[0.12em] uppercase mb-2 md:mb-4">
           // Alineadores invisibles · Invisalign Doctor
         </span>

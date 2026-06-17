@@ -68,6 +68,10 @@ export default function BlanqueamientoHero() {
           <Link to="/" className="hover:text-[#FAFAF8] md:hover:text-dark transition-colors">Inicio</Link> / Blanqueamiento Dental
         </div>
 
+        <h1 className="blanq-hero-text font-mono text-[11px] text-[#FAFAF8] md:text-text tracking-[0.12em] uppercase mb-2 md:mb-3">
+          Blanqueamiento Dental en San Salvador
+        </h1>
+
         <span className="blanq-hero-text font-mono text-[11px] text-white/70 md:text-accent tracking-[0.12em] uppercase mb-2 md:mb-6">
           // Blanqueamiento · Una sola sesión
         </span>
