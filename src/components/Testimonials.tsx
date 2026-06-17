@@ -33,47 +33,47 @@ export default function Testimonials() {
     {
       name: 'Katherine P.',
       text: 'Increíble el cambio que he visto en tan poco tiempo con usted, la mejor sin duda',
-      image: '/katherine  (1).webp',
+      image: '/katherine-p-testimonio-paciente.webp',
     },
     {
       name: 'Jose N.',
       text: 'Me gusto mucho la atención personalizada que prestan, y me gustaron mucho las instalaciones, ya que tiene equipos muy modernos. Es una clínica 5 estrellas',
-      image: '/jose david.webp',
+      image: '/jose-n-testimonio-paciente.webp',
     },
     {
       name: 'Isai N.',
       text: 'Super recomendado. Disfruté mucho mi tratamiento, tuve resultados muy satisfactorios. El tratamiento que en otros lugares me decían que se tardaría entre 2 años y medio o 3, salió en solo un año y medio con ella. Realmente fue una de las mejores decisiones de mi vida.',
-      image: '/alejandro i.webp',
+      image: '/isai-n-testimonio-paciente.webp',
     },
     {
       name: 'Meybel C.',
       text: 'Encantada con los resultados',
-      image: '/meybel c.webp',
+      image: '/meybel-c-testimonio-paciente.webp',
     },
     {
       name: 'Diego C.',
       text: 'Un lugar muy bonito para la atención de los clientes, está a la vanguardia de la tecnología',
-      image: '/diego c.webp',
+      image: '/diego-c-testimonio-paciente.webp',
     },
     {
       name: 'Geovanny A.',
       text: 'Un lugar muy bonito para la atención de los clientes, esta a la vanguardia de la tecnología',
-      image: '/Geovanny a.webp',
+      image: '/geovanny-a-testimonio-paciente.webp',
     },
     {
       name: 'Carlos H.',
       text: 'Excelente servicio, muy profesionales en todo momento.',
-      image: '/carlos h.webp',
+      image: '/carlos-h-testimonio-paciente.webp',
     },
     {
       name: 'Eduardo B.',
       text: 'Muy buena atención y resultados increíbles.',
-      image: '/eduardo b.webp',
+      image: '/eduardo-b-testimonio-paciente.webp',
     },
     {
       name: 'Shamby T.',
       text: 'La mejor clínica de ortodoncia de todo sivar!!',
-      image: '/shamby t.webp',
+      image: '/shamby-t-testimonio-paciente.webp',
     },
   ];
 

@@ -57,7 +57,7 @@ export default function DraMelissa() {
           className="w-full md:w-[45%] aspect-square rounded-[24px] overflow-hidden border border-accent/20"
         >
           <img
-            src="/la especialista.webp"
+            src="/dra-melissa-renee-ortodoncista-san-salvador.webp"
             alt="Dra. Melissa Reneé"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"

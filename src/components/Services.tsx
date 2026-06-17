@@ -5,7 +5,7 @@ export default function Services() {
   const services = [
     {
       id: 'invisalign',
-      image: '/invisa service card.webp',
+      image: '/invisalign-tratamiento-card.webp',
       tag: 'Alineadores Invisibles',
       title: 'Invisalign',
       body: 'Alineadores invisibles con resultados rápidos y discretos. Sin alambres. Sin molestias. Ideal para adultos que quieren sonreír con confianza desde el primer mes.',
@@ -18,7 +18,7 @@ export default function Services() {
     },
     {
       id: 'brackets',
-      image: '/brackets service card.webp',
+      image: '/brackets-tratamiento-card.webp',
       tag: 'Ortodoncia Tradicional',
       title: 'Brackets Metálicos y Cerámicos',
       body: 'Ortodoncia precisa y efectiva. Metálicos, cerámicos o autoligados. Opciones para cada caso y cada presupuesto, con los mismos tiempos de tratamiento reducidos.',
@@ -31,7 +31,7 @@ export default function Services() {
     },
     {
       id: 'blanqueamiento',
-      image: '/blanqueamiento.webp',
+      image: '/blanqueamiento-dental-tratamiento-card.webp',
       tag: 'Estética Dental',
       title: 'Blanqueamiento Dental',
       body: 'Una sola sesión de 10 minutos para una sonrisa hasta 7 tonos más blanca. Sin varias visitas, sin largas esperas. Resultados inmediatos ese mismo día.',

@@ -8,8 +8,8 @@ const items: StripItem[] = [
   { type: 'text', label: 'BRACKETS METÁLICOS' },
   { type: 'text', label: 'BRACKETS CERÁMICOS' },
   { type: 'text', label: 'BRACKETS AUTOLIGADOS' },
-  { type: 'logo', name: '3M', logo: '/3m test.webp' },
-  { type: 'logo', name: 'AMERICAN ORTHODONTICS', logo: '/american ortho logo.webp' },
+  { type: 'logo', name: '3M', logo: '/3m-logo.webp' },
+  { type: 'logo', name: 'AMERICAN ORTHODONTICS', logo: '/american-orthodontics-logo.webp' },
   { type: 'text', label: 'TECNOLOGÍA DE PRECISIÓN' },
   { type: 'text', label: 'SAN SALVADOR' }
 ];

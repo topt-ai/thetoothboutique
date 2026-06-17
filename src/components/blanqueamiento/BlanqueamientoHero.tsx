@@ -49,7 +49,7 @@ export default function BlanqueamientoHero() {
       <div
         className="absolute inset-0 md:hidden z-0"
         style={{
-          backgroundImage: 'url(/blanqueamiento%20page.webp)',
+          backgroundImage: 'url(/blanqueamiento-dental-san-salvador.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
         }}
@@ -118,7 +118,7 @@ export default function BlanqueamientoHero() {
           className="w-full h-full md:rounded-bl-[40px] overflow-hidden relative z-10"
         >
           <img
-            src="/blanqueamiento%20page.webp"
+            src="/blanqueamiento-dental-san-salvador.webp"
             alt="Blanqueamiento dental en The Tooth Boutique"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"

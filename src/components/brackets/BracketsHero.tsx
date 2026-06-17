@@ -52,7 +52,7 @@ export default function BracketsHero() {
       <div
         className="absolute inset-0 md:hidden z-0"
         style={{
-          backgroundImage: 'url(/brackets%20page.webp)',
+          backgroundImage: 'url(/brackets-san-salvador-clinica.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
         }}
@@ -124,7 +124,7 @@ export default function BracketsHero() {
           className="w-full h-full md:rounded-bl-[40px] overflow-hidden relative z-10"
         >
           <img
-            src="/brackets%20page.webp"
+            src="/brackets-san-salvador-clinica.webp"
             alt="Brackets"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"

@@ -5,9 +5,9 @@ type StripItem =
   | { type: 'text'; label: string };
 
 const items: StripItem[] = [
-  { type: 'logo', name: 'INVISALIGN', logo: '/invisa transparente.webp' },
-  { type: 'logo', name: 'iTERO', logo: '/itero logo.webp' },
-  { type: 'logo', name: 'SPRINTRAY', logo: '/sprintray logo.webp' },
+  { type: 'logo', name: 'INVISALIGN', logo: '/invisalign-logo-transparente.webp' },
+  { type: 'logo', name: 'iTERO', logo: '/itero-logo.webp' },
+  { type: 'logo', name: 'SPRINTRAY', logo: '/sprintray-logo.webp' },
   { type: 'text', label: 'TECNOLOGÍA DE PRECISIÓN' },
   { type: 'text', label: 'SAN SALVADOR' },
   { type: 'text', label: 'ZONA ROSA' }

@@ -52,7 +52,7 @@ export default function InvisalignHero() {
       <div
         className="absolute inset-0 md:hidden z-0"
         style={{
-          backgroundImage: 'url(/invisa1.webp)',
+          backgroundImage: 'url(/invisalign-san-salvador-clinica.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
         }}
@@ -124,7 +124,7 @@ export default function InvisalignHero() {
           className="w-full h-full md:rounded-bl-[40px] overflow-hidden relative z-10"
         >
           <img
-            src="/invisa1.webp"
+            src="/invisalign-san-salvador-clinica.webp"
             alt="Invisalign"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
