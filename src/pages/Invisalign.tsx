@@ -11,7 +11,7 @@ import CTABanner from '../components/invisalign/CTABanner';
 const serviceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'MedicalProcedure',
-  name: 'Invisalign El Salvador',
+  name: 'Invisalign San Salvador',
   description:
     'Tratamiento de ortodoncia con alineadores transparentes Invisalign en San Salvador. Discreto, cómodo y con resultados visibles en los primeros meses.',
   provider: {
@@ -77,8 +77,8 @@ export default function Invisalign() {
   return (
     <>
       <Helmet>
-        <title>Invisalign en El Salvador | Alineadores transparentes cerca de ti – The Tooth Boutique</title>
-        <meta name="description" content="Invisalign en El Salvador: alineadores transparentes, cómodos y efectivos. Tratamientos más rápidos y con menos molestias. Pregunta por precio de Invisalign y agenda tu cita cerca de ti." />
+        <title>Invisalign en San Salvador | Alineadores transparentes cerca de ti – The Tooth Boutique</title>
+        <meta name="description" content="Invisalign en San Salvador: alineadores transparentes, cómodos y efectivos. Tratamientos más rápidos y con menos molestias. Pregunta por precio de Invisalign y agenda tu cita cerca de ti." />
         <link rel="canonical" href="https://thetoothboutique.com/invisalign" />
         <script type="application/ld+json">{JSON.stringify(serviceJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>

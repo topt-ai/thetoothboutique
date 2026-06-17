@@ -12,7 +12,7 @@ import CTABanner from '../components/brackets/CTABanner';
 const serviceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'MedicalProcedure',
-  name: 'Brackets El Salvador',
+  name: 'Brackets San Salvador',
   description:
     'Ortodoncia con brackets metálicos, cerámicos y autoligados en San Salvador. Tratamientos modernos, rápidos y con planificación precisa.',
   provider: {
@@ -78,8 +78,8 @@ export default function Brackets() {
   return (
     <>
       <Helmet>
-        <title>Brackets en El Salvador | Ortodoncia moderna y rápida – The Tooth Boutique</title>
-        <meta name="description" content="Brackets en El Salvador: metálicos y estéticos con planificación precisa. Tratamientos de ortodoncia modernos, rápidos y con menos molestias. Consulta precios de brackets y agenda tu cita cerca de ti." />
+        <title>Brackets en San Salvador | Ortodoncia moderna y rápida – The Tooth Boutique</title>
+        <meta name="description" content="Brackets en San Salvador: metálicos y estéticos con planificación precisa. Tratamientos de ortodoncia modernos, rápidos y con menos molestias. Consulta precios de brackets y agenda tu cita cerca de ti." />
         <link rel="canonical" href="https://thetoothboutique.com/brackets" />
         <script type="application/ld+json">{JSON.stringify(serviceJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
