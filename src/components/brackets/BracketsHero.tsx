@@ -125,7 +125,7 @@ export default function BracketsHero() {
         >
           <img
             src="/brackets-san-salvador-clinica.webp"
-            alt="Brackets"
+            alt="Tratamiento de ortodoncia con brackets en The Tooth Boutique, San Salvador"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
             fetchPriority="high"

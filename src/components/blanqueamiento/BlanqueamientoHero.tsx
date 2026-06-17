@@ -119,7 +119,7 @@ export default function BlanqueamientoHero() {
         >
           <img
             src="/blanqueamiento-dental-san-salvador.webp"
-            alt="Blanqueamiento dental en The Tooth Boutique"
+            alt="Equipo de blanqueamiento dental profesional en The Tooth Boutique, San Salvador"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
             fetchPriority="high"

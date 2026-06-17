@@ -125,7 +125,7 @@ export default function InvisalignHero() {
         >
           <img
             src="/invisalign-san-salvador-clinica.webp"
-            alt="Invisalign"
+            alt="Tratamiento Invisalign con alineadores transparentes en The Tooth Boutique, San Salvador"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
             fetchPriority="high"

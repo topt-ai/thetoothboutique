@@ -51,7 +51,7 @@ export default function DraMelissaMini() {
         <div ref={imageRef} className="w-full md:w-[40%] h-[480px] rounded-[20px] overflow-hidden">
           <img
             src="/radiografia.webp"
-            alt="Dra. Melissa Reneé"
+            alt="Radiografía panorámica usada para planificación de ortodoncia en The Tooth Boutique, San Salvador"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
             loading="lazy"

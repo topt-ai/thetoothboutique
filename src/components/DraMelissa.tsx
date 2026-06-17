@@ -58,7 +58,7 @@ export default function DraMelissa() {
         >
           <img
             src="/dra-melissa-renee-ortodoncista-san-salvador.webp"
-            alt="Dra. Melissa Reneé"
+            alt="Dra. Melissa Reneé, ortodoncista especialista en Invisalign y brackets, San Salvador"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
             loading="lazy"

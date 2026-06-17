@@ -65,7 +65,7 @@ export default function Services() {
               <div className="w-full md:w-[45%] aspect-[4/5] md:aspect-square rounded-[24px] overflow-hidden shadow-[0_8px_32px_rgba(15,76,92,0.08)] border border-dark/5">
                 <img
                   src={service.image}
-                  alt={service.title}
+                  alt={`${service.title} en The Tooth Boutique, San Salvador`}
                   className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                   referrerPolicy="no-referrer"
                   loading="lazy"

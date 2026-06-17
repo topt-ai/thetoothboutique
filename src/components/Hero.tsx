@@ -120,7 +120,7 @@ export default function Hero() {
         >
           <img
             src="/main tooth.webp"
-            alt="Dra. Melissa Reneé"
+            alt="Dra. Melissa Reneé, ortodoncista en The Tooth Boutique, San Salvador"
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
             fetchPriority="high"
