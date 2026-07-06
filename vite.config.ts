@@ -14,6 +14,7 @@ export default defineConfig(({mode}) => {
           invisalign: resolve(__dirname, 'invisalign.html'),
           brackets: resolve(__dirname, 'brackets.html'),
           blanqueamiento: resolve(__dirname, 'blanqueamiento.html'),
+          review: resolve(__dirname, 'review.html'),
         },
       },
     },

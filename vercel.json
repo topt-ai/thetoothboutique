@@ -21,6 +21,10 @@
       "destination": "/blanqueamiento.html"
     },
     {
+      "source": "/review",
+      "destination": "/review.html"
+    },
+    {
       "source": "/((?!assets/).*)",
       "destination": "/index.html"
     }
