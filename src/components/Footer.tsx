@@ -23,6 +23,7 @@ export default function Footer() {
             <a href="#invisalign" className="font-body font-light text-[13px] text-[#FAFAF8]/60 hover:text-accent transition-colors">Invisalign</a>
             <a href="#brackets" className="font-body font-light text-[13px] text-[#FAFAF8]/60 hover:text-accent transition-colors">Brackets</a>
             <a href="#contacto" className="font-body font-light text-[13px] text-[#FAFAF8]/60 hover:text-accent transition-colors">Contacto</a>
+            <a href="https://review.thetoothboutique.com" target="_blank" rel="noopener noreferrer" className="font-body font-light text-[13px] text-[#FAFAF8]/60 hover:text-accent transition-colors">Dejar Review</a>
           </div>
 
           {/* Right */}

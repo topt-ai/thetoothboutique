@@ -9,6 +9,16 @@
   ],
   "rewrites": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "review.thetoothboutique.com"
+        }
+      ],
+      "destination": "/review.html"
+    },
+    {
       "source": "/invisalign",
       "destination": "/invisalign.html"
     },
