@@ -2,14 +2,14 @@ import React, { useState, useRef, useCallback } from 'react';
 import { Upload, Camera, Check, RefreshCcw } from 'lucide-react';
 import { getActiveWebhookUrl } from '../config/webhookConfig';
 
-const SUBMIT_TIMEOUT_MS = 30000;
+const SUBMIT_TIMEOUT_MS = 120000; // nano banana pro image edits can legitimately take a while
 
 export default function SmilePreview() {
   const [file, setFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [resultImage, setResultImage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [hasError, setHasError] = useState(false);
+  const [errorType, setErrorType] = useState<'failure' | 'timeout' | null>(null);
   const [consent, setConsent] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -48,7 +48,7 @@ export default function SmilePreview() {
     setFile(selectedFile);
     setPreviewUrl(URL.createObjectURL(selectedFile));
     setResultImage(null); // Reset result if new file is selected
-    setHasError(false);
+    setErrorType(null);
   };
 
   const openCamera = async () => {
@@ -99,7 +99,7 @@ export default function SmilePreview() {
 
     setIsLoading(true);
     setResultImage(null);
-    setHasError(false);
+    setErrorType(null);
 
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS);
@@ -125,7 +125,7 @@ export default function SmilePreview() {
       setResultImage(URL.createObjectURL(imageBlob));
     } catch (error) {
       console.error('Error procesando la imagen:', error);
-      setHasError(true);
+      setErrorType(error instanceof DOMException && error.name === 'AbortError' ? 'timeout' : 'failure');
     } finally {
       clearTimeout(timeoutId);
       setIsLoading(false);
@@ -252,7 +252,17 @@ export default function SmilePreview() {
                   Generando tu vista previa...
                 </p>
               </div>
-            ) : hasError ? (
+            ) : errorType === 'timeout' ? (
+              <div className="flex flex-col items-center gap-4 px-8 text-center">
+                <RefreshCcw size={32} className="text-accent" />
+                <p className="font-body font-medium text-[15px] text-[#FAFAF8]">
+                  Esto está tomando más tiempo del esperado.
+                </p>
+                <p className="font-body font-light text-[14px] text-[#FAFAF8]/60">
+                  Nuestra IA sigue procesando tu imagen. Por favor, intenta de nuevo en un momento.
+                </p>
+              </div>
+            ) : errorType === 'failure' ? (
               <div className="flex flex-col items-center gap-4 px-8 text-center">
                 <RefreshCcw size={32} className="text-accent" />
                 <p className="font-body font-medium text-[15px] text-[#FAFAF8]">
