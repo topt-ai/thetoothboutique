@@ -1,12 +1,15 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { Upload, Camera, Check } from 'lucide-react';
+import { Upload, Camera, Check, RefreshCcw } from 'lucide-react';
 import { getActiveWebhookUrl } from '../config/webhookConfig';
+
+const SUBMIT_TIMEOUT_MS = 30000;
 
 export default function SmilePreview() {
   const [file, setFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [resultImage, setResultImage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [hasError, setHasError] = useState(false);
   const [consent, setConsent] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -45,6 +48,7 @@ export default function SmilePreview() {
     setFile(selectedFile);
     setPreviewUrl(URL.createObjectURL(selectedFile));
     setResultImage(null); // Reset result if new file is selected
+    setHasError(false);
   };
 
   const openCamera = async () => {
@@ -95,6 +99,10 @@ export default function SmilePreview() {
 
     setIsLoading(true);
     setResultImage(null);
+    setHasError(false);
+
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), SUBMIT_TIMEOUT_MS);
 
     try {
       const webhookUrl = getActiveWebhookUrl();
@@ -103,8 +111,8 @@ export default function SmilePreview() {
       formData.append('mode', 'inline');
       formData.append('consent', 'yes');
 
-      const response = await fetch(webhookUrl, { method: 'POST', body: formData });
-      
+      const response = await fetch(webhookUrl, { method: 'POST', body: formData, signal: controller.signal });
+
       if (!response.ok) {
         throw new Error('Error en la respuesta del servidor');
       }
@@ -117,8 +125,9 @@ export default function SmilePreview() {
       setResultImage(URL.createObjectURL(imageBlob));
     } catch (error) {
       console.error('Error procesando la imagen:', error);
-      alert('Hubo un error al procesar la imagen. Por favor, intenta de nuevo.');
+      setHasError(true);
     } finally {
+      clearTimeout(timeoutId);
       setIsLoading(false);
     }
   };
@@ -241,6 +250,16 @@ export default function SmilePreview() {
                 <div className="w-12 h-12 border-4 border-accent/30 border-t-accent rounded-full animate-spin"></div>
                 <p className="font-body font-light text-[14px] text-[#FAFAF8]/50 animate-pulse">
                   Generando tu vista previa...
+                </p>
+              </div>
+            ) : hasError ? (
+              <div className="flex flex-col items-center gap-4 px-8 text-center">
+                <RefreshCcw size={32} className="text-accent" />
+                <p className="font-body font-medium text-[15px] text-[#FAFAF8]">
+                  Estamos optimizando este sistema.
+                </p>
+                <p className="font-body font-light text-[14px] text-[#FAFAF8]/60">
+                  Intenta de nuevo en unos minutos.
                 </p>
               </div>
             ) : resultImage ? (
