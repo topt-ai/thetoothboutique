@@ -10,4 +10,9 @@ export default async function middleware(request: Request) {
     url.pathname = '/review.html';
     return fetch(url);
   }
+
+  if (host === 'unete.thetoothboutique.com' && url.pathname === '/') {
+    url.pathname = '/careers.html';
+    return fetch(url);
+  }
 }

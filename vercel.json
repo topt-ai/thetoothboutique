@@ -25,6 +25,10 @@
       "destination": "/review.html"
     },
     {
+      "source": "/careers",
+      "destination": "/careers.html"
+    },
+    {
       "source": "/((?!assets/).*)",
       "destination": "/index.html"
     }

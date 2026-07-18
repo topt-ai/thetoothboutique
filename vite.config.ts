@@ -15,6 +15,7 @@ export default defineConfig(({mode}) => {
           brackets: resolve(__dirname, 'brackets.html'),
           blanqueamiento: resolve(__dirname, 'blanqueamiento.html'),
           review: resolve(__dirname, 'review.html'),
+          careers: resolve(__dirname, 'careers.html'),
         },
       },
     },
