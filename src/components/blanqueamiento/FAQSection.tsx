@@ -23,12 +23,12 @@ export default function FAQSection() {
     },
     {
       question: '¿Cuánto cuesta el blanqueamiento dental?',
-      answer: 'Escríbenos por WhatsApp y te damos el precio exacto. El costo varía según el caso.',
+      answer: 'El costo del blanqueamiento dental varía según la complejidad de cada caso. Para darte un precio exacto, hacemos una evaluación inicial de $65 que incluye escaneo 3D, fotos y diagnóstico completo, donde te entregamos un plan de tratamiento con el costo específico para tu caso.',
     },
   ];
 
   return (
-    <section className="py-[100px] px-8 md:px-[8%] bg-dark">
+    <section id="faq" className="py-[100px] px-8 md:px-[8%] bg-dark">
       <div className="max-w-4xl mx-auto">
         <div className="mb-16">
           <span className="font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6 block">

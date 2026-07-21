@@ -25,10 +25,18 @@ export default function FAQSection() {
       question: '¿Cuál tipo de bracket me conviene?',
       answer: 'Depende de tu caso, tu presupuesto y tu preferencia estética. En la consulta evaluamos tu caso y te explicamos cuál opción te da el mejor resultado en el menor tiempo posible.',
     },
+    {
+      question: '¿Cuál es la diferencia entre brackets metálicos, cerámicos y autoligados?',
+      answer: 'Los brackets metálicos son la opción más económica y resistente, con el historial clínico más largo. Los cerámicos funcionan igual pero son del color del diente, más discretos y con un costo un poco mayor. Los autoligados no usan ligas elásticas, lo que reduce la fricción, mejora la comodidad y puede acortar el tiempo total de tratamiento.',
+    },
+    {
+      question: '¿Cuánto cuesta el tratamiento de brackets en San Salvador?',
+      answer: 'El costo de los brackets varía según la complejidad de cada caso. Para darte un precio exacto, hacemos una evaluación inicial de $65 que incluye escaneo 3D, fotos y diagnóstico completo, donde te entregamos un plan de tratamiento con el costo específico para tu caso.',
+    },
   ];
 
   return (
-    <section className="py-[100px] px-8 md:px-[8%] bg-dark">
+    <section id="faq" className="py-[100px] px-8 md:px-[8%] bg-dark">
       <div className="max-w-4xl mx-auto">
         <div className="mb-16">
           <span className="font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6 block">

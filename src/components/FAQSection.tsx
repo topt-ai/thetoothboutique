@@ -29,10 +29,14 @@ export default function FAQSection() {
       question: '¿Dónde está ubicada The Tooth Boutique?',
       answer: 'Estamos en Century Tower, Zona Rosa, Local 2A, frente a Centro Comercial Bambú, San Salvador.',
     },
+    {
+      question: '¿Cuánto cuesta la primera consulta o evaluación en The Tooth Boutique?',
+      answer: 'La evaluación inicial incluye escaneo dental en 3D, fotos extraorales e intraorales, diagnóstico y entrega del plan de tratamiento, con un valor de $65. Adicionalmente se requieren dos radiografías, con un costo de $20 cada una, tomadas en la misma clínica.',
+    },
   ];
 
   return (
-    <section className="py-[100px] px-8 md:px-[8%] bg-dark">
+    <section id="faq" className="py-[100px] px-8 md:px-[8%] bg-dark">
       <div className="max-w-4xl mx-auto">
         <div className="mb-16">
           <span className="font-mono text-[11px] text-accent tracking-[0.12em] uppercase mb-6 block">
