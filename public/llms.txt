@@ -1,0 +1,15 @@
+# The Tooth Boutique
+
+> Clínica de ortodoncia en San Salvador, El Salvador, especializada en Invisalign,
+> brackets (metálicos, cerámicos y autoligados) y blanqueamiento dental. Fundada en
+> 2020 por la Dra. Melissa Reneé, Invisalign Doctor Provider. Ubicada en Century
+> Tower, Zona Rosa, San Salvador.
+
+## Servicios
+- [Invisalign](https://thetoothboutique.com/invisalign)
+- [Brackets](https://thetoothboutique.com/brackets)
+- [Blanqueamiento Dental](https://thetoothboutique.com/blanqueamiento)
+
+## Contacto
+- Dirección: Century Tower, Zona Rosa, San Salvador, El Salvador
+- Teléfono: +503 7905 6000

@@ -59,6 +59,8 @@
       "telephone": "+50379056000",
       "email": "hola@thetoothboutique.com",
       "priceRange": "$$",
+      "foundingDate": "2020",
+      "founder": {"@id": "https://thetoothboutique.com/#dra-melissa"},
       "medicalSpecialty": "Orthodontic",
       "address": {
         "@type": "PostalAddress",
@@ -109,9 +111,18 @@
       },
       "employee": {
         "@type": "Person",
+        "@id": "https://thetoothboutique.com/#dra-melissa",
         "name": "Dra. Melissa Reneé",
         "jobTitle": "Orthodontist",
-        "worksFor": {"@id": "https://thetoothboutique.com/#clinic"}
+        "worksFor": {"@id": "https://thetoothboutique.com/#clinic"},
+        "alumniOf": [
+          {"@type": "CollegeOrUniversity", "name": "Universidad Evangélica de El Salvador"},
+          {"@type": "CollegeOrUniversity", "name": "Universidad Francisco Marroquín"}
+        ],
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Máster en Ortodoncia"
+        }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
