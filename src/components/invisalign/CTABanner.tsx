@@ -5,7 +5,7 @@ export default function CTABanner() {
     <section className="w-full bg-gold py-[80px] px-8 md:px-[8%] text-center">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         <h2 className="font-display font-bold text-[clamp(36px,4vw,60px)] text-white leading-[1.1] mb-4">
-          ¿Lista para empezar?<br />
+          ¿Listo para empezar?<br />
           <span className="italic font-normal">Da el primer paso.</span>
         </h2>
         

@@ -31,7 +31,7 @@ export default function ProcessSection() {
   const steps = [
     {
       number: '01',
-      title: 'Llegás',
+      title: 'Llegas',
       body: 'Te recibimos y preparamos tu sonrisa para el tratamiento.',
     },
     {

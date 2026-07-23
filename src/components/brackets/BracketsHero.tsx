@@ -82,12 +82,12 @@ export default function BracketsHero() {
           // Ortodoncia · Metálicos · Cerámicos · Autoligados
         </span>
 
-        <h2 className="hero-text-element font-display font-bold text-[clamp(40px,6vw,88px)] text-[#FAFAF8] md:text-text leading-[1.05] mb-4 md:mb-5">
+        <h2 className="hero-text-element font-display font-bold text-[clamp(40px,6vw,88px)] text-[#FAFAF8] md:text-text leading-[1.05] mb-3 md:mb-4">
           Ortodoncia precisa.<br />
           <span className="italic font-normal">Para cada sonrisa.</span>
         </h2>
 
-        <p className="hero-text-element font-body font-light text-[16px] md:text-[18px] text-[rgba(250,250,248,0.75)] md:text-muted max-w-[480px] leading-[1.6] md:leading-[1.7] mb-4 md:mb-6">
+        <p className="hero-text-element font-body font-light text-[16px] md:text-[18px] text-[rgba(250,250,248,0.75)] md:text-muted max-w-[540px] leading-[1.6] md:leading-[1.7] mb-4 md:mb-6">
           Brackets metálicos, cerámicos o autoligados. Tres opciones, un mismo objetivo: terminar tu tratamiento antes de lo que esperas, con los resultados que mereces.
         </p>
 
