@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import Lenis from 'lenis';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import PixelTracker from './components/PixelTracker';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,6 +46,7 @@ export default function App() {
 
   return (
     <Router>
+      <PixelTracker />
       <div className="bg-bg min-h-screen text-text font-body">
         <Suspense fallback={<div className="h-screen w-full bg-bg flex items-center justify-center"></div>}>
           <Navbar />
