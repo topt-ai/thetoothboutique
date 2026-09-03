@@ -33,6 +33,18 @@ export default function FAQSection() {
       question: '¿Cuánto cuesta la primera consulta o evaluación en The Tooth Boutique?',
       answer: 'La evaluación inicial incluye escaneo dental en 3D, fotos extraorales e intraorales, diagnóstico y entrega del plan de tratamiento, con un valor de $65. Adicionalmente se requieren dos radiografías, con un costo de $20 cada una, tomadas en la misma clínica.',
     },
+    {
+      question: '¿Cada cuánto debo hacerme una limpieza dental profesional?',
+      answer: 'Se recomienda una profilaxis o limpieza dental profesional cada 6 meses. En The Tooth Boutique la sesión dura entre 30 y 40 minutos, tiene un costo de $50.',
+    },
+    {
+      question: '¿La profilaxis dental quita las manchas de los dientes?',
+      answer: 'Sí. La limpieza profesional remueve las manchas superficiales causadas por café, té, tabaco y alimentos, además de eliminar placa y sarro. Para aclarar el color natural del diente varios tonos, el tratamiento indicado es el blanqueamiento dental.',
+    },
+    {
+      question: '¿Puedo hacerme una limpieza dental si ya tengo ortodoncia?',
+      answer: 'Sí. Se recomienda una limpieza dental cada 4 a 6 meses, ya sea que tengas tratamiento de brackets o Invisalign, para mantener las encías sanas y los dientes limpios durante la ortodoncia.',
+    },
   ];
 
   return (
