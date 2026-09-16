@@ -134,7 +134,7 @@ export default function CareerApplication() {
           ) : (
             <>
               <h1 className="font-display font-medium text-2xl sm:text-[26px] text-dark text-center leading-snug mb-2">
-                Gracias por querer ser parte del equipo Tooth Boutique
+                Gracias por querer ser parte del equipo de The Tooth Boutique
               </h1>
               <p className="text-center text-[13px] text-muted tracking-[0.02em] mb-8">
                 Llena el formulario y nos pondremos en contacto contigo de ser necesario.

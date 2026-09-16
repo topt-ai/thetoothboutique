@@ -34,7 +34,22 @@ export const SITE = {
     tiktok: 'https://www.tiktok.com/@dramelissarenee',
   },
   founded: '2020',
-  areas: ['San Salvador', 'Zona Rosa', 'San Benito', 'Escalón', 'Maquilishuat', 'Antiguo Cuscatlán', 'Santa Tecla', 'Santa Elena'],
+  // Zonas de donde llegan los pacientes. type = 'City' para municipios, 'Place' para colonias/zonas.
+  // Solo va al schema (areaServed), nunca a copy visible.
+  areas: [
+    { name: 'San Salvador', type: 'City' },
+    { name: 'Antiguo Cuscatlán', type: 'City' },
+    { name: 'Santa Tecla', type: 'City' },
+    { name: 'Nuevo Cuscatlán', type: 'City' },
+    { name: 'Zona Rosa', type: 'Place' },
+    { name: 'San Benito', type: 'Place' },
+    { name: 'Colonia Escalón', type: 'Place' },
+    { name: 'Maquilishuat', type: 'Place' },
+    { name: 'Santa Elena', type: 'Place' },
+    { name: 'Ciudad Merliot', type: 'Place' },
+    { name: 'Jardines de Guadalupe', type: 'Place' },
+    { name: 'Lomas de San Francisco', type: 'Place' },
+  ],
   images: {
     hero: '/main tooth.webp',
     doctor: '/dra-melissa-renee-ortodoncista-san-salvador.webp',

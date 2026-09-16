@@ -2,7 +2,7 @@ import type { FAQ } from '@/components/shared/FAQAccordion';
 import { SITE } from '@/lib/site';
 
 export const homeMeta = {
-  title: 'Mejor Ortodoncista San Salvador - Tooth Boutique - Invisalign, Brackets Metálicos y Cerámicos, Blanqueamiento Dental y Alineadores Invisibles cerca de mí',
+  title: 'Mejor Ortodoncista San Salvador - The Tooth Boutique - Invisalign, Brackets Metálicos y Cerámicos, Blanqueamiento Dental y Alineadores Invisibles cerca de mí',
   description: 'Clínica de ortodoncia en San Salvador especializada en Invisalign, brackets metálicos, cerámicos, autoligados y blanqueamiento dental. Zona Rosa, Century Tower. Agenda tu consulta.',
   ogTitle: 'Ortodoncista San Salvador | Invisalign, Brackets y Blanqueamiento – The Tooth Boutique',
   ogDescription: 'Clínica de ortodoncia en San Salvador especializada en Invisalign, brackets y blanqueamiento dental. Zona Rosa, Century Tower.',
